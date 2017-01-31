@@ -1,3 +1,10 @@
+#####Version 0.7.8 - PRIVATE ONLY (by chaos234)
+- reimplemented option to automatically refill Graphite Electrodes (incl. config option for this)
+- implemented PR: https://github.com/BluSunrize/ImmersiveEngineering/pull/1653
+- implemented PR: https://github.com/BluSunrize/ImmersiveEngineering/pull/1237
+- implemented PR: https://github.com/BluSunrize/ImmersiveEngineering/pull/1222
+- implemented PR: https://github.com/BluSunrize/ImmersiveEngineering/pull/1176
+
 #####Version 0.7.7 - BUILT
 - fixed the potion ID error and some minor bugs (thanks malte)
 
