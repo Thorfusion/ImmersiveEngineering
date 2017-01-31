@@ -45,6 +45,7 @@ public class TileEntityArcFurnace extends TileEntityMultiblockPart implements IE
 	public int pouringMetal;
 	public boolean computerControlled;
 	public boolean computerOn;
+    public boolean autoReplGElectrodes = Config.getBoolean("autoReplGElectrodes");
 
 	@Override
 	public TileEntityArcFurnace master()
@@ -643,7 +644,7 @@ public class TileEntityArcFurnace extends TileEntityMultiblockPart implements IE
 	{
 		if(!formed)
 			return new int[0];
-		if(((pos==21||pos==23) && side==ForgeDirection.OPPOSITES[facing]) || (pos==112 && side==1)) {
+		if(((pos==21||pos==23) && side==ForgeDirection.OPPOSITES[facing] && autoReplGElectrodes==true) || (pos==112 && side==1 && autoReplGElectrodes==true)) {
             final TileEntityArcFurnace master = master();
             ArrayList<Integer> slotsElec = new ArrayList<>(3);
             boolean allOccupied = true;

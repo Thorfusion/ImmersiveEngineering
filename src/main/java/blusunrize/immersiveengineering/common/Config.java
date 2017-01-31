@@ -101,7 +101,10 @@ public class Config
 		setBoolean("showUpdateNews", config.get("general", "Show Update News", true, "Set this to false to hide the update news in the manual").getBoolean());
 		setStringArray("blacklistBosses", config.get("general", "Shaderbag Blacklist", new String[]{"entitynpc", "entitycustomnpc"}, "A list entity class names that can not drop shader bags. This is necessary because some developers use the IBossDisplayData interface on entities that aren't actually bosses.").getStringList());
 		setBoolean("buildVillage", config.get("general", "Enable Village House", true, "Set this to false to prevent the engineer's village house from being generated").getBoolean());
-		
+
+        //adding option to disable autoreplacement for Graphit Electrodes
+        setBoolean("autoReplGElectrodes", config.get("general", "Replace Graphite Electrodes automaticly", false, "Set this to true to have the ability to create any automation for replacing Graphite Electrodes (Possible Inputs: On the Top of the Graphite Electrodes and on the left/right side of the Slag output.").getBoolean());
+
 		Calendar calendar = Calendar.getInstance();
 		setBoolean("christmas", calendar.get(2)+1==12);
 

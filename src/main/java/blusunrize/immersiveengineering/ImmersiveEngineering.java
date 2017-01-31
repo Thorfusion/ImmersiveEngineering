@@ -9,7 +9,6 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonStreamParser;
 
 import blusunrize.immersiveengineering.api.IEApi;
-import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler;
 import blusunrize.immersiveengineering.api.energy.WireType;
 import blusunrize.immersiveengineering.api.shader.ShaderRegistry;
 import blusunrize.immersiveengineering.api.tool.ExcavatorHandler;
@@ -60,7 +59,7 @@ public class ImmersiveEngineering
 	public static final String MODID = "ImmersiveEngineering";
 	public static final String MODNAME = "Immersive Engineering";
 	public static final String VERSION = "${version}";
-	public static final double VERSION_D = .71;
+	public static final double VERSION_D = .72;
 
 	@Mod.Instance(MODID)
 	public static ImmersiveEngineering instance = new ImmersiveEngineering();
@@ -200,7 +199,7 @@ public class ImmersiveEngineering
 			Gson gson = new Gson();
 			try {
 				IELogger.info("Attempting to download special revolvers from GitHub");
-				URL url = new URL("https://raw.githubusercontent.com/BluSunrize/ImmersiveEngineering/master/contributorRevolvers.json");
+				URL url = new URL("https://raw.githubusercontent.com/chaos234/ImmersiveEngineering/master/contributorRevolvers.json");
 				JsonStreamParser parser = new JsonStreamParser(new InputStreamReader(url.openStream()));
 				while(parser.hasNext())
 				{
