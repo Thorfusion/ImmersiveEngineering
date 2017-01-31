@@ -34,7 +34,7 @@ public class IC2Helper extends IECompatModule
 	{
         TileEntity ret = EnergyNet.instance.getTileEntity(sink.getWorldObj(), sink.xCoord, sink.yCoord, sink.zCoord);
         if (ret == null) return false;
-        return ret instanceof IEnergySink && ((IEnergySink)sink).acceptsEnergyFrom(tile, fd);
+        return ret instanceof IEnergySink && ((IEnergySink)ret).acceptsEnergyFrom(tile, fd);
 	}
 
 	public static double injectEnergy(TileEntity sink, ForgeDirection fd, double amount, double voltage, boolean simulate)
