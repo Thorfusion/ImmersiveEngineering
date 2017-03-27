@@ -1,0 +1,54 @@
+From 4053733f08002fa3981dcdafd3e0a1021b7f818f Mon Sep 17 00:00:00 2001
+From: Dogboy21 <Dogboy2103@gmail.com>
+Date: Mon, 21 Nov 2016 17:07:15 +0100
+Subject: [PATCH] Fix force loaded worlds
+
+Fixes a bug where worlds were kept loaded by IE because of Wire Connectors
+---
+ .../immersiveengineering/api/energy/ImmersiveNetHandler.java |  6 +++++-
+ .../blusunrize/immersiveengineering/common/IESaveData.java   | 12 ++++--------
+ 2 files changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/src/main/java/blusunrize/immersiveengineering/api/energy/ImmersiveNetHandler.java b/src/main/java/blusunrize/immersiveengineering/api/energy/ImmersiveNetHandler.java
+index 052e360..6f40de7 100644
+--- a/src/main/java/blusunrize/immersiveengineering/api/energy/ImmersiveNetHandler.java
++++ b/src/main/java/blusunrize/immersiveengineering/api/energy/ImmersiveNetHandler.java
+@@ -143,8 +143,12 @@ private void remove(ChunkCoordinates cc, World w, Connection c) {
+ 	}
+ 	public Collection<Connection> getAllConnections(World world)
+ 	{
++		return this.getAllConnections(world.provider.dimensionId);
++	}
++	public Collection<Connection> getAllConnections(int dim)
++	{
+ 		Set<Connection> ret = newSetFromMap(new ConcurrentHashMap<Connection, Boolean>());
+-		for (Set<Connection> conlist : getMultimap(world.provider.dimensionId).values())
++		for (Set<Connection> conlist : getMultimap(dim).values())
+ 			ret.addAll(conlist);
+ 		return ret;
+ 	}
+diff --git a/src/main/java/blusunrize/immersiveengineering/common/IESaveData.java b/src/main/java/blusunrize/immersiveengineering/common/IESaveData.java
+index 899fab0..412227d 100644
+--- a/src/main/java/blusunrize/immersiveengineering/common/IESaveData.java
++++ b/src/main/java/blusunrize/immersiveengineering/common/IESaveData.java
+@@ -98,16 +98,12 @@ public void writeToNBT(NBTTagCompound nbt)
+ 		nbt.setIntArray("savedDimensions", savedDimensions);
+ 		for(int dim: savedDimensions)
+ 		{
+-			World world = MinecraftServer.getServer().worldServerForDimension(dim);
+-			if(world!=null)
++			NBTTagList connectionList = new NBTTagList();
++			for(Connection con : ImmersiveNetHandler.INSTANCE.getAllConnections(dim))
+ 			{
+-				NBTTagList connectionList = new NBTTagList();
+-				for(Connection con : ImmersiveNetHandler.INSTANCE.getAllConnections(world))
+-				{
+-					connectionList.appendTag(con.writeToNBT());
+-				}
+-				nbt.setTag("connectionList"+dim, connectionList);
++				connectionList.appendTag(con.writeToNBT());
+ 			}
++			nbt.setTag("connectionList"+dim, connectionList);
+ 		}
+ 
+ 		NBTTagList mineralList = new NBTTagList();

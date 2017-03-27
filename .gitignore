@@ -48,3 +48,4 @@ hs_err*
 /.idea
 /out
 *.dll
+symlink_libs.bat
