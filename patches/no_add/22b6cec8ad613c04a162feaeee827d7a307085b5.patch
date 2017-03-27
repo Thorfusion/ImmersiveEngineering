@@ -1,0 +1,67 @@
+From 22b6cec8ad613c04a162feaeee827d7a307085b5 Mon Sep 17 00:00:00 2001
+From: dualinfinities <dualinfinities@timesplice.net>
+Date: Fri, 16 Sep 2016 19:16:00 -0700
+Subject: [PATCH] Breaking News: Rusty Coder Attempts Arc Furnace Input Fix
+
+I set out to fix the way the input ports put additives like copper dust or obsidian into the smelting slots by separating the main slots from the additive ones. this may need cleanup and I may have used the wrong pos for the top inputs. tell me if anything is messed up, and I'll fix it. the texture for the top could be improved by replacing the blue port rings with green and purple ones to distinguish them, but the positioning is a "good enough" indicator.
+---
+ .../common/blocks/metal/TileEntityArcFurnace.java  | 22 ++++++++++++++++------
+ 1 file changed, 16 insertions(+), 6 deletions(-)
+
+diff --git a/src/main/java/blusunrize/immersiveengineering/common/blocks/metal/TileEntityArcFurnace.java b/src/main/java/blusunrize/immersiveengineering/common/blocks/metal/TileEntityArcFurnace.java
+index 94f7b9d..14d93a7 100644
+--- a/src/main/java/blusunrize/immersiveengineering/common/blocks/metal/TileEntityArcFurnace.java
++++ b/src/main/java/blusunrize/immersiveengineering/common/blocks/metal/TileEntityArcFurnace.java
+@@ -641,11 +641,11 @@ public boolean isItemValidForSlot(int slot, ItemStack stack)
+ 	@Override
+ 	public int[] getAccessibleSlotsFromSide(int side)
+ 	{
++		final TileEntityArcFurnace master = master();
+ 		if(!formed)
+ 			return new int[0];
+-		if((pos==86||pos==88) && side==1)//Input hatches on top
++		if(pos==86 && side==1)//Input hatch on top left
+ 		{
+-			final TileEntityArcFurnace master = master();
+ 			ArrayList<Integer> slotsMain = new ArrayList<>(12);
+ 			boolean allOccupied = true;
+ 			for(int i=0; i<=11; i++)
+@@ -665,7 +665,17 @@ public int compare(Integer arg0, Integer arg1)
+ 					return Integer.compare((stack0!=null?stack0.stackSize:0),(stack1!=null?stack1.stackSize:0));
+ 				}
+ 			});
+-
++			
++			int[] ret = new int[slotsMain.size()];
++			for(int i=0; i<ret.length; i++)
++			{
++				int slot = slotsMain.get(i);
++				ret[i] = slot;
++			}
++			return ret;
++		}
++		if(pos==88 && side==1)//Input hatch on top right
++		{	
+ 			ArrayList<Integer> slotsAdditives = new ArrayList<>(4);
+ 			allOccupied = true;
+ 			for(int i=12; i<=15; i++)
+@@ -686,10 +696,10 @@ public int compare(Integer arg0, Integer arg1)
+ 				}
+ 			});
+ 
+-			int[] ret = new int[slotsMain.size()+slotsAdditives.size()];
++			int[] ret = new int[slotsAdditives.size()];
+ 			for(int i=0; i<ret.length; i++)
+ 			{
+-				int slot = i<slotsMain.size()?slotsMain.get(i): slotsAdditives.get(i-slotsMain.size());
++				int slot = slotsAdditives.get(i);
+ 				ret[i] = slot;
+ 			}
+ 			return ret;
+@@ -757,4 +767,4 @@ public int getMaxEnergyStored(ForgeDirection from)
+ 			return master.energyStorage.getMaxEnergyStored();
+ 		return energyStorage.getMaxEnergyStored();
+ 	}
+-}
+\ No newline at end of file
++}
