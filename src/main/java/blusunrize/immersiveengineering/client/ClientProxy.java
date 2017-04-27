@@ -690,9 +690,9 @@ public class ClientProxy extends CommonProxy
 				double x = tile.xCoord+.5+.1*(tile.facing<4?2*(tile.getWorldObj().rand.nextGaussian()-.5):0);
 				double y = tile.yCoord+2.5;// + tile.getWorldObj().rand.nextGaussian()/2;
 				double z = tile.zCoord+.5+.1*(tile.facing>3?2*(tile.getWorldObj().rand.nextGaussian()-.5):0);
-				double mX = ((tile.facing==4?-.075:tile.facing==5?.075:0)*(tile.mirrored?-1:1)) + ((tile.getWorldObj().rand.nextDouble()-.5)*.01);
+				double mX = ((tile.facing==4?-.075:tile.facing==5?.075:0)*(tile.mirrored?-1:1)) + ((tile.getWorldObj().rand.nextFloat()-.5)*.01);
 				double mY = -.15D;//tile.getWorldObj().rand.nextGaussian() * -0.05D;
-				double mZ = ((tile.facing==2?-.075:tile.facing==3?.075:0)*(tile.mirrored?-1:1)) + ((tile.getWorldObj().rand.nextDouble()-.5)*.01);
+				double mZ = ((tile.facing==2?-.075:tile.facing==3?.075:0)*(tile.mirrored?-1:1)) + ((tile.getWorldObj().rand.nextFloat()-.5)*.01);
 
 				EntityFX particle = null;
 				if(stack.getItem().getSpriteNumber()==0)

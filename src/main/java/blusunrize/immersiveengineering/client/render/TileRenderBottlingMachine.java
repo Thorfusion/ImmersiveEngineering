@@ -54,8 +54,8 @@ public class TileRenderBottlingMachine extends TileRenderIE
 		if(!bottler.formed || bottler.pos!=4)
 			return;
 		GL11.glPushMatrix();
-		GL11.glTranslated(x+.5, y, z+.5);
-		GL11.glRotated(bottler.facing==3?180: bottler.facing==4?90: bottler.facing==5?-90: 0, 0,1,0);
+		GL11.glTranslatef((float)x+.5f, (float)y, (float)z+.5f);
+		GL11.glRotatef(bottler.facing==3?180: bottler.facing==4?90: bottler.facing==5?-90: 0, 0,1,0);
 		double shift = .3358;
 
 		Matrix4 translationMatrix = new Matrix4();
@@ -63,7 +63,7 @@ public class TileRenderBottlingMachine extends TileRenderIE
 		if(bottler.mirrored)
 			GL11.glScalef(-1,1,1);
 
-		GL11.glTranslated(shift/2,0,0);
+		GL11.glTranslatef((float)(shift/2),0f,0f);
 
 		double d0 = .05867077;
 		double d1 = .08265846;
@@ -83,14 +83,14 @@ public class TileRenderBottlingMachine extends TileRenderIE
 						tapShift = 1-(step-.4-d0-d1*1.5)/d1;
 
 				GL11.glPushMatrix();
-				GL11.glTranslated(1,1.15625,.5);
+				GL11.glTranslatef(1f,1.15625f,.5f);
 				double itemX = 0;
 				double itemY = 0;
 				double itemZ = 0;
 				itemX = -( step<.18?0: step<.4?((step-.18)/.22)*.75: step<.6?.75+((step-.40)/.2)*.8125: step<.82?1.5625+(step-.6)/.22*.75: 2.3125);
 				itemZ = -( step<.18?step/.18*.9: step<.4?.9+((step-.18)/.22)*.7875: step<.6? 1.6875: step<.82?1.6875-((step-.6)/.22)*.7875: (1-step)/.18 * .9);
 
-				GL11.glTranslated(itemX,itemY,itemZ);
+				GL11.glTranslatef((float)itemX,(float)itemY,(float)itemZ);
 
 				if(bottler.mirrored)
 					GL11.glScalef(-1,1,1);
@@ -98,13 +98,13 @@ public class TileRenderBottlingMachine extends TileRenderIE
 				GL11.glPopMatrix();
 			}
 
-		GL11.glTranslated(-shift*tapShift,0,0);
+		GL11.glTranslatef((float)(-shift*tapShift),0f,0f);
 		Tessellator tes = ClientUtils.tes();
 		ClientUtils.bindAtlas(0);
 		tes.startDrawingQuads();
 		model.render(tile, tes, translationMatrix,rotationMatrix, 0, bottler.mirrored, "tap");
 		tes.draw();
-		GL11.glTranslated(shift*tapShift,0,0);
+		GL11.glTranslatef((float)(shift*tapShift),0f,0f);
 
 		GL11.glPopMatrix();
 	}
@@ -117,7 +117,7 @@ public class TileRenderBottlingMachine extends TileRenderIE
 		{
 			GL11.glPushMatrix();
 			ClientUtils.bindAtlas(1);
-			GL11.glTranslated(.0,-.0525,.0625/6);
+			GL11.glTranslatef(.0f,-.0525f,.0625f/6f);
 			GL11.glScalef(.51f, .51f, .51f);
 
 			if(fill>0)
@@ -137,12 +137,12 @@ public class TileRenderBottlingMachine extends TileRenderIE
 					IIcon iconEmpty = empty.getItem().getIcon(empty, pass);
 					int h = Math.round((1-fill)*iconEmpty.getIconHeight());
 					double pxFill = h/(double)iconEmpty.getIconHeight();
-					GL11.glTranslated(0,1-pxFill,0);
+					GL11.glTranslatef(0f,1f-(float)pxFill,0f);
 					int col = empty.getItem().getColorFromItemStack(empty, pass);
 					GL11.glColor3f((col>>16&255)/255f, (col>>8&255)/255f, (col&255)/255f);
 					ClientUtils.renderItemIn2D(iconEmpty, new double[]{0,1,0,pxFill}, iconEmpty.getIconWidth(),h, .0625f);
 					GL11.glColor3f(1,1,1);
-					GL11.glTranslated(0,-1-pxFill,0);
+					GL11.glTranslatef(0f,-1f-(float)pxFill,0f);
 				}
 			GL11.glPopMatrix();
 		}

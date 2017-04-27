@@ -23,7 +23,7 @@ public class EntityRenderSkycrate extends Render
 //		Block b = IEContent.blockWoodenDevice;
 //		IIcon ic = b.getIcon(0, 4);
 		GL11.glPushMatrix();
-		GL11.glTranslated(x, y, z);
+		GL11.glTranslatef((float)x, (float)y, (float)z);
 //		
 //		RenderBlocks.getInstance().setRenderBounds(0,0,0, 1,1,1);
 //		tes.startDrawingQuads();

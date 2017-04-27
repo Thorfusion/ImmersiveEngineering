@@ -79,11 +79,11 @@ public class TileEntityArcFurnace extends TileEntityMultiblockPart implements IE
 				for(int i=0; i<4; i++)
 				{
 					if(worldObj.rand.nextInt(6)==0)
-						ImmersiveEngineering.proxy.spawnSparkFX(worldObj, xCoord+.5+(facing==4?-.25:facing==5?.25:0),yCoord+2,zCoord+.5+(facing==2?-.25:facing==3?.25:0), worldObj.rand.nextDouble()*.05-.025, .025, worldObj.rand.nextDouble()*.05-.025);
+						ImmersiveEngineering.proxy.spawnSparkFX(worldObj, xCoord+.5+(facing==4?-.25:facing==5?.25:0),yCoord+2,zCoord+.5+(facing==2?-.25:facing==3?.25:0), worldObj.rand.nextFloat()*.05-.025, .025, worldObj.rand.nextFloat()*.05-.025);
 					if(worldObj.rand.nextInt(6)==0)
-						ImmersiveEngineering.proxy.spawnSparkFX(worldObj, xCoord+.5+(facing==4?.25:facing==5?-.25:.25),yCoord+2,zCoord+.5+(facing==2?.25:facing==3?-.25:-.25), worldObj.rand.nextDouble()*.05-.025, .025, worldObj.rand.nextDouble()*.05-.025);
+						ImmersiveEngineering.proxy.spawnSparkFX(worldObj, xCoord+.5+(facing==4?.25:facing==5?-.25:.25),yCoord+2,zCoord+.5+(facing==2?.25:facing==3?-.25:-.25), worldObj.rand.nextFloat()*.05-.025, .025, worldObj.rand.nextFloat()*.05-.025);
 					if(worldObj.rand.nextInt(6)==0)
-						ImmersiveEngineering.proxy.spawnSparkFX(worldObj, xCoord+.5+(facing==4?.25:facing==5?-.25:-.25),yCoord+2,zCoord+.5+(facing==2?.25:facing==3?-.25:.25), worldObj.rand.nextDouble()*.05-.025, .025, worldObj.rand.nextDouble()*.05-.025);
+						ImmersiveEngineering.proxy.spawnSparkFX(worldObj, xCoord+.5+(facing==4?.25:facing==5?-.25:-.25),yCoord+2,zCoord+.5+(facing==2?.25:facing==3?-.25:.25), worldObj.rand.nextFloat()*.05-.025, .025, worldObj.rand.nextFloat()*.05-.025);
 				}
 			return;
 		}

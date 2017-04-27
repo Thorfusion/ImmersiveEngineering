@@ -43,7 +43,7 @@ public class MultiblockBlastFurnaceAdvanced implements IMultiblock
 	@SideOnly(Side.CLIENT)
 	public boolean overwriteBlockRender(ItemStack stack, int iterator)
 	{
-		GL11.glTranslated(0, .5, 0);
+		GL11.glTranslatef(0f, .5f, 0f);
 		return false;
 	}
 	@Override

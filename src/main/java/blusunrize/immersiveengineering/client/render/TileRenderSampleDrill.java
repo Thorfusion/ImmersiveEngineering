@@ -21,7 +21,7 @@ public class TileRenderSampleDrill extends TileEntitySpecialRenderer
 		if(drill.pos==0)
 		{
 			GL11.glPushMatrix();
-			GL11.glTranslated(x+.5, y+1.25, z+.5);
+			GL11.glTranslatef((float)x+.5f, (float)y+1.25f, (float)z+.5f);
 
 			ClientUtils.bindTexture("immersiveengineering:textures/blocks/metal_coreDrill.png");
 			GL11.glDisable(GL11.GL_CULL_FACE);
@@ -35,7 +35,7 @@ public class TileRenderSampleDrill extends TileEntitySpecialRenderer
 				float push = drill.process/(float)max;
 				if(drill.process>max/2)
 					push = 1-push;
-				GL11.glTranslated(0,-2.8f*push,0);
+				GL11.glTranslatef(0,-2.8f*push,0);
 			}
 			model.renderPart("drill");
 

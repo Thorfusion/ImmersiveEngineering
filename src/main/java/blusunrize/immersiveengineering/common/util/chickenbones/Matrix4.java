@@ -28,7 +28,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 public class Matrix4
 {
 	//m<row><column>
-	public double m00, m01, m02, m03, m10, m11, m12, m13, m20, m21, m22, m23, m30, m31, m32, m33;
+	public float m00, m01, m02, m03, m10, m11, m12, m13, m20, m21, m22, m23, m30, m31, m32, m33;
 	public Matrix4()
 	{
 		m00 = m11 = m22 = m33 = 1;
@@ -37,6 +37,28 @@ public class Matrix4
 			double d10, double d11, double d12, double d13,
 			double d20, double d21, double d22, double d23,
 			double d30, double d31, double d32, double d33)
+	{
+		m00 = (float)d00;
+		m01 = (float)d01;
+		m02 = (float)d02;
+		m03 = (float)d03;
+		m10 = (float)d10;
+		m11 = (float)d11;
+		m12 = (float)d12;
+		m13 = (float)d13;
+		m20 = (float)d20;
+		m21 = (float)d21;
+		m22 = (float)d22;
+		m23 = (float)d23;
+		m30 = (float)d30;
+		m31 = (float)d31;
+		m32 = (float)d32;
+		m33 = (float)d33;
+	}
+	public Matrix4(float d00, float d01, float d02, float d03,
+			float d10, float d11, float d12, float d13,
+			float d20, float d21, float d22, float d23,
+			float d30, float d31, float d32, float d33)
 	{
 		m00 = d00;
 		m01 = d01;
@@ -99,32 +121,32 @@ public class Matrix4
 	}
 	public Matrix4 rotate(double angle, Vertex axis)
 	{
-		double c = Math.cos(angle);
-		double s = Math.sin(angle);
-		double mc = 1.0f - c;
-		double xy = axis.x*axis.y;
-		double yz = axis.y*axis.z;
-		double xz = axis.x*axis.z;
-		double xs = axis.x*s;
-		double ys = axis.y*s;
-		double zs = axis.z*s;
-		double f00 = axis.x*axis.x*mc+c;
-		double f10 = xy*mc+zs;
-		double f20 = xz*mc-ys;
-		double f01 = xy*mc-zs;
-		double f11 = axis.y*axis.y*mc+c;
-		double f21 = yz*mc+xs;
-		double f02 = xz*mc+ys;
-		double f12 = yz*mc-xs;
-		double f22 = axis.z*axis.z*mc+c;
-		double t00 = m00 * f00 + m01 * f10 + m02 * f20;
-		double t10 = m10 * f00 + m11 * f10 + m12 * f20;
-		double t20 = m20 * f00 + m21 * f10 + m22 * f20;
-		double t30 = m30 * f00 + m31 * f10 + m32 * f20;
-		double t01 = m00 * f01 + m01 * f11 + m02 * f21;
-		double t11 = m10 * f01 + m11 * f11 + m12 * f21;
-		double t21 = m20 * f01 + m21 * f11 + m22 * f21;
-		double t31 = m30 * f01 + m31 * f11 + m32 * f21;
+		float c = (float)Math.cos(angle);
+		float s = (float)Math.sin(angle);
+		float mc = 1.0f - c;
+		float xy = axis.x*axis.y;
+		float yz = axis.y*axis.z;
+		float xz = axis.x*axis.z;
+		float xs = axis.x*s;
+		float ys = axis.y*s;
+		float zs = axis.z*s;
+		float f00 = axis.x*axis.x*mc+c;
+		float f10 = xy*mc+zs;
+		float f20 = xz*mc-ys;
+		float f01 = xy*mc-zs;
+		float f11 = axis.y*axis.y*mc+c;
+		float f21 = yz*mc+xs;
+		float f02 = xz*mc+ys;
+		float f12 = yz*mc-xs;
+		float f22 = axis.z*axis.z*mc+c;
+		float t00 = m00 * f00 + m01 * f10 + m02 * f20;
+		float t10 = m10 * f00 + m11 * f10 + m12 * f20;
+		float t20 = m20 * f00 + m21 * f10 + m22 * f20;
+		float t30 = m30 * f00 + m31 * f10 + m32 * f20;
+		float t01 = m00 * f01 + m01 * f11 + m02 * f21;
+		float t11 = m10 * f01 + m11 * f11 + m12 * f21;
+		float t21 = m20 * f01 + m21 * f11 + m22 * f21;
+		float t31 = m30 * f01 + m31 * f11 + m32 * f21;
 		m02 = m00 * f02 + m01 * f12 + m02 * f22;
 		m12 = m10 * f02 + m11 * f12 + m12 * f22;
 		m22 = m20 * f02 + m21 * f12 + m22 * f22;
@@ -141,32 +163,32 @@ public class Matrix4
 	}
 	public Matrix4 rotate(double angle, double x, double y, double z)
 	{
-		double c = Math.cos(angle);
-		double s = Math.sin(angle);
-		double mc = 1.0f - c;
-		double xy = x*y;
-		double yz = y*z;
-		double xz = x*z;
-		double xs = x*s;
-		double ys = y*s;
-		double zs = z*s;
-		double f00 = x*x*mc+c;
-		double f10 = xy*mc+zs;
-		double f20 = xz*mc-ys;
-		double f01 = xy*mc-zs;
-		double f11 = y*y*mc+c;
-		double f21 = yz*mc+xs;
-		double f02 = xz*mc+ys;
-		double f12 = yz*mc-xs;
-		double f22 = z*z*mc+c;
-		double t00 = m00 * f00 + m01 * f10 + m02 * f20;
-		double t10 = m10 * f00 + m11 * f10 + m12 * f20;
-		double t20 = m20 * f00 + m21 * f10 + m22 * f20;
-		double t30 = m30 * f00 + m31 * f10 + m32 * f20;
-		double t01 = m00 * f01 + m01 * f11 + m02 * f21;
-		double t11 = m10 * f01 + m11 * f11 + m12 * f21;
-		double t21 = m20 * f01 + m21 * f11 + m22 * f21;
-		double t31 = m30 * f01 + m31 * f11 + m32 * f21;
+		float c = (float)Math.cos(angle);
+		float s = (float)Math.sin(angle);
+		float mc = 1.0f - c;
+		float xy = (float)(x*y);
+		float yz = (float)(y*z);
+		float xz = (float)(x*z);
+		float xs = (float)x*s;
+		float ys = (float)y*s;
+		float zs = (float)z*s;
+		float f00 = (float)(x*x)*mc+c;
+		float f10 = xy*mc+zs;
+		float f20 = xz*mc-ys;
+		float f01 = xy*mc-zs;
+		float f11 = (float)(y*y)*mc+c;
+		float f21 = yz*mc+xs;
+		float f02 = xz*mc+ys;
+		float f12 = yz*mc-xs;
+		float f22 = (float)(z*z)*mc+c;
+		float t00 = m00 * f00 + m01 * f10 + m02 * f20;
+		float t10 = m10 * f00 + m11 * f10 + m12 * f20;
+		float t20 = m20 * f00 + m21 * f10 + m22 * f20;
+		float t30 = m30 * f00 + m31 * f10 + m32 * f20;
+		float t01 = m00 * f01 + m01 * f11 + m02 * f21;
+		float t11 = m10 * f01 + m11 * f11 + m12 * f21;
+		float t21 = m20 * f01 + m21 * f11 + m22 * f21;
+		float t31 = m30 * f01 + m31 * f11 + m32 * f21;
 		m02 = m00 * f02 + m01 * f12 + m02 * f22;
 		m12 = m10 * f02 + m11 * f12 + m12 * f22;
 		m22 = m20 * f02 + m21 * f12 + m22 * f22;
@@ -183,22 +205,22 @@ public class Matrix4
 	}
 	public Matrix4 leftMultiply(Matrix4 mat)
 	{
-		double n00 = m00 * mat.m00 + m10 * mat.m01 + m20 * mat.m02 + m30 * mat.m03;
-		double n01 = m01 * mat.m00 + m11 * mat.m01 + m21 * mat.m02 + m31 * mat.m03;
-		double n02 = m02 * mat.m00 + m12 * mat.m01 + m22 * mat.m02 + m32 * mat.m03;
-		double n03 = m03 * mat.m00 + m13 * mat.m01 + m23 * mat.m02 + m33 * mat.m03;
-		double n10 = m00 * mat.m10 + m10 * mat.m11 + m20 * mat.m12 + m30 * mat.m13;
-		double n11 = m01 * mat.m10 + m11 * mat.m11 + m21 * mat.m12 + m31 * mat.m13;
-		double n12 = m02 * mat.m10 + m12 * mat.m11 + m22 * mat.m12 + m32 * mat.m13;
-		double n13 = m03 * mat.m10 + m13 * mat.m11 + m23 * mat.m12 + m33 * mat.m13;
-		double n20 = m00 * mat.m20 + m10 * mat.m21 + m20 * mat.m22 + m30 * mat.m23;
-		double n21 = m01 * mat.m20 + m11 * mat.m21 + m21 * mat.m22 + m31 * mat.m23;
-		double n22 = m02 * mat.m20 + m12 * mat.m21 + m22 * mat.m22 + m32 * mat.m23;
-		double n23 = m03 * mat.m20 + m13 * mat.m21 + m23 * mat.m22 + m33 * mat.m23;
-		double n30 = m00 * mat.m30 + m10 * mat.m31 + m20 * mat.m32 + m30 * mat.m33;
-		double n31 = m01 * mat.m30 + m11 * mat.m31 + m21 * mat.m32 + m31 * mat.m33;
-		double n32 = m02 * mat.m30 + m12 * mat.m31 + m22 * mat.m32 + m32 * mat.m33;
-		double n33 = m03 * mat.m30 + m13 * mat.m31 + m23 * mat.m32 + m33 * mat.m33;
+		float n00 = m00 * mat.m00 + m10 * mat.m01 + m20 * mat.m02 + m30 * mat.m03;
+		float n01 = m01 * mat.m00 + m11 * mat.m01 + m21 * mat.m02 + m31 * mat.m03;
+		float n02 = m02 * mat.m00 + m12 * mat.m01 + m22 * mat.m02 + m32 * mat.m03;
+		float n03 = m03 * mat.m00 + m13 * mat.m01 + m23 * mat.m02 + m33 * mat.m03;
+		float n10 = m00 * mat.m10 + m10 * mat.m11 + m20 * mat.m12 + m30 * mat.m13;
+		float n11 = m01 * mat.m10 + m11 * mat.m11 + m21 * mat.m12 + m31 * mat.m13;
+		float n12 = m02 * mat.m10 + m12 * mat.m11 + m22 * mat.m12 + m32 * mat.m13;
+		float n13 = m03 * mat.m10 + m13 * mat.m11 + m23 * mat.m12 + m33 * mat.m13;
+		float n20 = m00 * mat.m20 + m10 * mat.m21 + m20 * mat.m22 + m30 * mat.m23;
+		float n21 = m01 * mat.m20 + m11 * mat.m21 + m21 * mat.m22 + m31 * mat.m23;
+		float n22 = m02 * mat.m20 + m12 * mat.m21 + m22 * mat.m22 + m32 * mat.m23;
+		float n23 = m03 * mat.m20 + m13 * mat.m21 + m23 * mat.m22 + m33 * mat.m23;
+		float n30 = m00 * mat.m30 + m10 * mat.m31 + m20 * mat.m32 + m30 * mat.m33;
+		float n31 = m01 * mat.m30 + m11 * mat.m31 + m21 * mat.m32 + m31 * mat.m33;
+		float n32 = m02 * mat.m30 + m12 * mat.m31 + m22 * mat.m32 + m32 * mat.m33;
+		float n33 = m03 * mat.m30 + m13 * mat.m31 + m23 * mat.m32 + m33 * mat.m33;
 		m00 = n00;
 		m01 = n01;
 		m02 = n02;
@@ -219,22 +241,22 @@ public class Matrix4
 	}
 	public Matrix4 multiply(Matrix4 mat)
 	{
-		double n00 = m00 * mat.m00 + m01 * mat.m10 + m02 * mat.m20 + m03 * mat.m30;
-		double n01 = m00 * mat.m01 + m01 * mat.m11 + m02 * mat.m21 + m03 * mat.m31;
-		double n02 = m00 * mat.m02 + m01 * mat.m12 + m02 * mat.m22 + m03 * mat.m32;
-		double n03 = m00 * mat.m03 + m01 * mat.m13 + m02 * mat.m23 + m03 * mat.m33;
-		double n10 = m10 * mat.m00 + m11 * mat.m10 + m12 * mat.m20 + m13 * mat.m30;
-		double n11 = m10 * mat.m01 + m11 * mat.m11 + m12 * mat.m21 + m13 * mat.m31;
-		double n12 = m10 * mat.m02 + m11 * mat.m12 + m12 * mat.m22 + m13 * mat.m32;
-		double n13 = m10 * mat.m03 + m11 * mat.m13 + m12 * mat.m23 + m13 * mat.m33;
-		double n20 = m20 * mat.m00 + m21 * mat.m10 + m22 * mat.m20 + m23 * mat.m30;
-		double n21 = m20 * mat.m01 + m21 * mat.m11 + m22 * mat.m21 + m23 * mat.m31;
-		double n22 = m20 * mat.m02 + m21 * mat.m12 + m22 * mat.m22 + m23 * mat.m32;
-		double n23 = m20 * mat.m03 + m21 * mat.m13 + m22 * mat.m23 + m23 * mat.m33;
-		double n30 = m30 * mat.m00 + m31 * mat.m10 + m32 * mat.m20 + m33 * mat.m30;
-		double n31 = m30 * mat.m01 + m31 * mat.m11 + m32 * mat.m21 + m33 * mat.m31;
-		double n32 = m30 * mat.m02 + m31 * mat.m12 + m32 * mat.m22 + m33 * mat.m32;
-		double n33 = m30 * mat.m03 + m31 * mat.m13 + m32 * mat.m23 + m33 * mat.m33;
+		float n00 = m00 * mat.m00 + m01 * mat.m10 + m02 * mat.m20 + m03 * mat.m30;
+		float n01 = m00 * mat.m01 + m01 * mat.m11 + m02 * mat.m21 + m03 * mat.m31;
+		float n02 = m00 * mat.m02 + m01 * mat.m12 + m02 * mat.m22 + m03 * mat.m32;
+		float n03 = m00 * mat.m03 + m01 * mat.m13 + m02 * mat.m23 + m03 * mat.m33;
+		float n10 = m10 * mat.m00 + m11 * mat.m10 + m12 * mat.m20 + m13 * mat.m30;
+		float n11 = m10 * mat.m01 + m11 * mat.m11 + m12 * mat.m21 + m13 * mat.m31;
+		float n12 = m10 * mat.m02 + m11 * mat.m12 + m12 * mat.m22 + m13 * mat.m32;
+		float n13 = m10 * mat.m03 + m11 * mat.m13 + m12 * mat.m23 + m13 * mat.m33;
+		float n20 = m20 * mat.m00 + m21 * mat.m10 + m22 * mat.m20 + m23 * mat.m30;
+		float n21 = m20 * mat.m01 + m21 * mat.m11 + m22 * mat.m21 + m23 * mat.m31;
+		float n22 = m20 * mat.m02 + m21 * mat.m12 + m22 * mat.m22 + m23 * mat.m32;
+		float n23 = m20 * mat.m03 + m21 * mat.m13 + m22 * mat.m23 + m23 * mat.m33;
+		float n30 = m30 * mat.m00 + m31 * mat.m10 + m32 * mat.m20 + m33 * mat.m30;
+		float n31 = m30 * mat.m01 + m31 * mat.m11 + m32 * mat.m21 + m33 * mat.m31;
+		float n32 = m30 * mat.m02 + m31 * mat.m12 + m32 * mat.m22 + m33 * mat.m32;
+		float n33 = m30 * mat.m03 + m31 * mat.m13 + m32 * mat.m23 + m33 * mat.m33;
 		m00 = n00;
 		m01 = n01;
 		m02 = n02;
@@ -255,22 +277,22 @@ public class Matrix4
 	}
 	public Matrix4 transpose()
 	{
-		double n00 = m00;
-		double n10 = m01;
-		double n20 = m02;
-		double n30 = m03;
-		double n01 = m10;
-		double n11 = m11;
-		double n21 = m12;
-		double n31 = m13;
-		double n02 = m20;
-		double n12 = m21;
-		double n22 = m22;
-		double n32 = m23;
-		double n03 = m30;
-		double n13 = m31;
-		double n23 = m32;
-		double n33 = m33;
+		float n00 = m00;
+		float n10 = m01;
+		float n20 = m02;
+		float n30 = m03;
+		float n01 = m10;
+		float n11 = m11;
+		float n21 = m12;
+		float n31 = m13;
+		float n02 = m20;
+		float n12 = m21;
+		float n22 = m22;
+		float n32 = m23;
+		float n03 = m30;
+		float n13 = m31;
+		float n23 = m32;
+		float n33 = m33;
 		m00 = n00;
 		m01 = n01;
 		m02 = n02;
@@ -319,12 +341,12 @@ public class Matrix4
 	}
 	private void mult3x3(Vertex vec)
 	{
-		double x = m00 * vec.x + m01 * vec.y + m02 * vec.z;
-		double y = m10 * vec.x + m11 * vec.y + m12 * vec.z;
-		double z = m20 * vec.x + m21 * vec.y + m22 * vec.z;
-		vec.x = (float)x;
-		vec.y = (float)y;
-		vec.z = (float)z;
+		float x = m00 * vec.x + m01 * vec.y + m02 * vec.z;
+		float y = m10 * vec.x + m11 * vec.y + m12 * vec.z;
+		float z = m20 * vec.x + m21 * vec.y + m22 * vec.z;
+		vec.x = x;
+		vec.y = y;
+		vec.z = z;
 	}
 	public void apply(Vertex vec)
 	{
@@ -335,12 +357,12 @@ public class Matrix4
 	}
 	private void mult3x3(Vec3 vec)
 	{
-		double x = m00 * vec.xCoord + m01 * vec.yCoord + m02 * vec.zCoord;
-		double y = m10 * vec.xCoord + m11 * vec.yCoord + m12 * vec.zCoord;
-		double z = m20 * vec.xCoord + m21 * vec.yCoord + m22 * vec.zCoord;
-		vec.xCoord = (float)x;
-		vec.yCoord = (float)y;
-		vec.zCoord = (float)z;
+		float x = m00 * (float)vec.xCoord + m01 * (float)vec.yCoord + m02 * (float)vec.zCoord;
+		float y = m10 * (float)vec.xCoord + m11 * (float)vec.yCoord + m12 * (float)vec.zCoord;
+		float z = m20 * (float)vec.xCoord + m21 * (float)vec.yCoord + m22 * (float)vec.zCoord;
+		vec.xCoord = x;
+		vec.yCoord = y;
+		vec.zCoord = z;
 	}
 	public void apply(Vec3 vec)
 	{

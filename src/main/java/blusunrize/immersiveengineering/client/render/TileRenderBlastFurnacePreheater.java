@@ -17,7 +17,7 @@ public class TileRenderBlastFurnacePreheater extends TileRenderIE
 		if(preheater.dummy==0)
 		{
 			GL11.glPushMatrix();
-			GL11.glTranslated(x+.5, y+.5, z+.5);
+			GL11.glTranslatef((float)x+.5f, (float)y+.5f, (float)z+.5f);
 			GL11.glRotatef(preheater.facing==2?180f: preheater.facing==4?-90f: preheater.facing==5?90f :0, 0,1,0);
 			ClientUtils.bindAtlas(0);
 			long tick = tile.getWorldObj().getTotalWorldTime();

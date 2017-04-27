@@ -19,7 +19,7 @@ public class EntityRenderRevolvershot extends Render
 	{
 		GL11.glPushMatrix();
 		this.bindEntityTexture(entity);
-		GL11.glTranslated(x, y, z);
+		GL11.glTranslatef((float)x, (float)y, (float)z);
 		GL11.glEnable(GL12.GL_RESCALE_NORMAL);
 		Tessellator tessellator = Tessellator.instance;
 

@@ -141,8 +141,8 @@ public class BotaniaHelper extends IECompatModule
 			{
 				GL11.glPushMatrix();
 				((ItemRevolver)IEContent.itemRevolver).applySpecialCrafting(revolverEntity.getEntityItem(), special);
-				GL11.glRotated(200, 1,0,0);
-				GL11.glTranslated(-.16,-1.3,.6);
+				GL11.glRotatef(200, 1,0,0);
+				GL11.glTranslatef(-.16f,-1.3f,.6f);
 				GL11.glScalef(.625f,.625f,.625f);
 				RenderManager.instance.renderEntityWithPosYaw(revolverEntity, 0.0D, 0.0D, 0.0D, 0.0F, 0.0F);
 				GL11.glPopMatrix();

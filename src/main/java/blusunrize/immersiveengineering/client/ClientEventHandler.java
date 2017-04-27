@@ -324,9 +324,9 @@ public class ClientEventHandler
 
 
 				Tessellator.instance.setTranslation(tile.xCoord-dx, tile.yCoord-dy, tile.zCoord-dz);
-				//				GL11.glTranslated((tile.xCoord+.5-dx), (tile.yCoord+.5-dy), (tile.zCoord+.5-dz));
+				//				GL11.glTranslatef((tile.xCoord+.5-dx), (tile.yCoord+.5-dy), (tile.zCoord+.5-dz));
 				ClientUtils.renderAttachedConnections((TileEntity)tile);
-				//				GL11.glTranslated(-(tile.xCoord+.5-dx), -(tile.yCoord+.5-dy), -(tile.zCoord+.5-dz));
+				//				GL11.glTranslatef(-(tile.xCoord+.5-dx), -(tile.yCoord+.5-dy), -(tile.zCoord+.5-dz));
 
 			}
 
@@ -461,7 +461,7 @@ public class ClientEventHandler
 					float dy = event.resolution.getScaledHeight()-64;
 					GL11.glPushMatrix();
 					GL11.glEnable(GL11.GL_BLEND);
-					GL11.glTranslated(dx, dy, 0);
+					GL11.glTranslatef(dx, dy, 0);
 					GL11.glScalef(.5f, .5f, 1);
 
 					ClientUtils.drawTexturedRect(0,1,74,74, 0/256f,74/256f, 51/256f,125/256f);
@@ -511,7 +511,7 @@ public class ClientEventHandler
 					float dx = event.resolution.getScaledWidth()-16;
 					float dy = event.resolution.getScaledHeight();
 					GL11.glPushMatrix();
-					GL11.glTranslated(dx, dy, 0);
+					GL11.glTranslatef(dx, dy, 0);
 					int w = 31;
 					int h = 62;
 					double uMin = 179/256f;
@@ -520,24 +520,24 @@ public class ClientEventHandler
 					double vMax = 71/256f;
 					ClientUtils.drawTexturedRect(-24,-68, w,h, uMin,uMax,vMin,vMax);
 
-					GL11.glTranslated(-23,-37,0);
+					GL11.glTranslatef(-23,-37,0);
 					FluidStack fuel = ((IFluidContainerItem)equipped.getItem()).getFluid(equipped);
 					int amount = fuel!=null?fuel.amount:0;
 					if(!drill && player.isUsingItem())
 						amount -= player.getItemInUseDuration()*Config.getInt("chemthrower_consumption");
 					float cap = (float)((IFluidContainerItem)equipped.getItem()).getCapacity(equipped);
 					float angle = 83-(166* amount/cap);
-					GL11.glRotatef(angle, 0, 0, 1);
+					GL11.glRotatef(angle, 0f, 0f, 1f);
 					ClientUtils.drawTexturedRect(6,-2, 24,4, 91/256f,123/256f, 80/256f,87/256f);
-					GL11.glRotatef(-angle, 0, 0, 1);
+					GL11.glRotatef(-angle, 0f, 0f, 1f);
 					//					for(int i=0; i<=8; i++)
 					//					{
 					//						float angle = 83-(166/8f)*i;
-					//						GL11.glRotatef(angle, 0, 0, 1);
+					//						GL11.glRotatef(angle, 0f, 0f, 1f);
 					//						ClientUtils.drawTexturedRect(6,-2, 24,4, 91/256f,123/256f, 80/96f,87/96f);
-					//						GL11.glRotatef(-angle, 0, 0, 1);
+					//						GL11.glRotatef(-angle, 0f, 0f, 1f);
 					//					}
-					GL11.glTranslated(23,37,0);
+					GL11.glTranslatef(23,37,0);
 					if(drill)
 					{
 						ClientUtils.drawTexturedRect(-54,-73, 66,72, 108/256f,174/256f, 4/256f,76/256f);
@@ -567,7 +567,7 @@ public class ClientEventHandler
 				//					GL11.glColor4f(1, 1, 1, 1);
 				//					GL11.glPushMatrix();
 				//					GL11.glEnable(GL11.GL_BLEND);
-				//					GL11.glTranslated(dx, dy, 0);
+				//					GL11.glTranslatef(dx, dy, 0);
 				//
 				//					int duration = player.getItemInUseDuration();
 				//					int chargeTime = ((ItemRailgun)equipped.getItem()).getChargeTime(equipped);

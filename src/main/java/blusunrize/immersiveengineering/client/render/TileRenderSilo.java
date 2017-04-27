@@ -27,7 +27,7 @@ public class TileRenderSilo extends TileEntitySpecialRenderer
 			return;
 		GL11.glPushMatrix();
 
-		GL11.glTranslated(x+.5, y, z+.5);
+		GL11.glTranslatef((float)x+.5f, (float)y, (float)z+.5f);
 
 		ClientUtils.bindTexture("immersiveengineering:textures/models/silo.png");
 

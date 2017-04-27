@@ -14,10 +14,10 @@ public class EntityFXVanilla extends EntityFXIEBase
 		switch(tag)
 		{
 		case "smoke":
-			this.particleMaxAge = (int)(8.0D / (Math.random() * 0.8D + 0.2D));
+			this.particleMaxAge = (int)(8.0D / ((new org.bogdang.modifications.random.XSTR()).nextFloat() * 0.8D + 0.2D));
 			break;    
 		case "largeSmoke":
-			this.particleMaxAge = (int)((8.0D / (Math.random() * 0.8D + 0.2D))*2.5f);
+			this.particleMaxAge = (int)((8.0D / ((new org.bogdang.modifications.random.XSTR()).nextFloat() * 0.8D + 0.2D))*2.5f);
 			break;    
 		case "explode":
 			this.particleMaxAge = (int)(16.0D / ((double)this.rand.nextFloat() * 0.8D + 0.2D)) + 2;

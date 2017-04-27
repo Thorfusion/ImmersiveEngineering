@@ -19,9 +19,9 @@ public class TileRenderWindmill extends TileEntitySpecialRenderer
 		TileEntityWindmill mill = (TileEntityWindmill)tile;
 
 		GL11.glPushMatrix();
-		GL11.glTranslated(x+.5, y+.5, z+.5);
+		GL11.glTranslatef((float)x+.5f, (float)y+.5f, (float)z+.5f);
 
-		GL11.glRotated(mill.facing==2?0: mill.facing==3?180: mill.facing==4?90: -90, 0, 1, 0);
+		GL11.glRotatef(mill.facing==2?0: mill.facing==3?180: mill.facing==4?90: -90, 0, 1, 0);
 
 		float rot = 360*(mill.rotation+(!mill.canTurn||mill.rotation==0?0:f*mill.prevRotation));
 		model.setRotateAngle(model.axel, 0, 0, -(float)Math.toRadians(rot));

@@ -24,7 +24,7 @@ public class EntityRenderChemthrowerShot extends Render
 		if(((EntityChemthrowerShot)entity).getFluid()==null)
 			return;
 		GL11.glPushMatrix();
-		GL11.glTranslated(x, y, z);
+		GL11.glTranslatef((float)x, (float)y, (float)z);
 		GL11.glEnable(GL12.GL_RESCALE_NORMAL);
 		Tessellator tessellator = Tessellator.instance;
 

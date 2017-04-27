@@ -148,8 +148,8 @@ public class NEIBottlingMachineHandler extends TemplateRecipeHandler
 			drawTexturedModalRect(74,8, 179,14, (int)((cycleticks%timer)/(float)timer*20),16);
 
 			GL11.glTranslatef(89, 50, 100);
-			GL11.glRotatef(-45, 1, 0, 0);
-			GL11.glRotatef(180, 0, 1, 0);
+			GL11.glRotatef(-45f, 1f, 0f, 0f);
+			GL11.glRotatef(180f, 0f, 1f, 0f);
 			GL11.glScalef(12, -12, 12);
 
 			TileEntityBottlingMachine tile = new TileEntityBottlingMachine();

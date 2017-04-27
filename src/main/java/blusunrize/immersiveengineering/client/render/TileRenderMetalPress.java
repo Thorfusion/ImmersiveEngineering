@@ -45,7 +45,7 @@ public class TileRenderMetalPress extends TileRenderIE
 		if(press.pos!=4)
 			return;
 		GL11.glPushMatrix();
-		GL11.glTranslated(x+.5, y-1, z+.5);
+		GL11.glTranslatef((float)x+.5f, (float)y-1f, (float)z+.5f);
 		GL11.glRotatef(press.facing==3?180: press.facing==4?90: press.facing==5?-90: 0, 0,1,0);
 		float piston = 0;
 		float shift[] = new float[press.inventory.length];
@@ -70,7 +70,7 @@ public class TileRenderMetalPress extends TileRenderIE
 		}
 
 		ClientUtils.bindAtlas(0);
-		GL11.glTranslated(0,-piston*.6875f,0);
+		GL11.glTranslatef(0,-piston*.6875f,0);
 		ClientUtils.tes().startDrawingQuads();
 		model.render(tile, ClientUtils.tes(), new Matrix4(),new Matrix4(), 0, false, "piston");
 		ClientUtils.tes().draw();
@@ -79,7 +79,7 @@ public class TileRenderMetalPress extends TileRenderIE
 		if(press.mold!=null)
 		{
 			GL11.glPushMatrix();
-			GL11.glTranslated(0,1.875,.3125);
+			GL11.glTranslatef(0f,1.875f,.3125f);
 			GL11.glRotatef(-90, 1,0,0);
 			ClientUtils.bindAtlas(1);
 			for(int pass=0; pass<press.mold.getItem().getRenderPasses(press.mold.getItemDamage()); pass++)
@@ -98,13 +98,13 @@ public class TileRenderMetalPress extends TileRenderIE
 			}
 			GL11.glPopMatrix();
 		}
-		GL11.glTranslated(0,piston*.6875f,0);
+		GL11.glTranslatef(0,piston*.6875f,0);
 
-		GL11.glTranslated(0,1.15,1.46);
+		GL11.glTranslatef(0f,1.15f,1.46f);
 		for(int i=0; i<press.inventory.length; i++)
 			if(press.inventory[i]!=null && press.process[i]<119 && press.process[i]>=0)
 			{
-				GL11.glTranslated(0,0,-2.5*shift[i]);
+				GL11.glTranslatef(0f,0f,-2.5f*shift[i]);
 				ItemStack stack = press.inventory[i];
 				GL11.glRotatef(-90, 1,0,0);
 				EntityItem entityitem = new EntityItem(tile.getWorldObj(), 0.0D, 0.0D, 0.0D, stack);
@@ -114,7 +114,7 @@ public class TileRenderMetalPress extends TileRenderIE
 				RenderManager.instance.renderEntityWithPosYaw(entityitem, 0.0D, 0.0D, 0.0D, 0.0F, 0.0F);
 				RenderItem.renderInFrame = false;
 				GL11.glRotatef(90, 1,0,0);
-				GL11.glTranslated(0,0,2.5*shift[i]);
+				GL11.glTranslatef(0f,0f,2.5f*shift[i]);
 			}
 		GL11.glEnable(GL11.GL_LIGHTING);
 		GL11.glPopMatrix();

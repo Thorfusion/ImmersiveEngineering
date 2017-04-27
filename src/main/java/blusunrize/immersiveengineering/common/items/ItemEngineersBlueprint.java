@@ -80,7 +80,7 @@ public class ItemEngineersBlueprint extends ItemUpgradeableTool
 	public WeightedRandomChestContent getChestGenBase(ChestGenHooks chest, Random random, WeightedRandomChestContent original)
 	{
 		original.theItemId.setTagCompound(null);
-		if(random.nextDouble()<.125f)
+		if(random.nextFloat()<.125f)
 		{
 			original.theItemId.setStackDisplayName("Super Special BluPrintz");
 			ItemNBTHelper.setLore(original.theItemId, "Congratulations!","You have found an easter egg!");

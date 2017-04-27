@@ -44,8 +44,8 @@ public class TileRenderDieselGenerator extends TileRenderIE
 			return;
 		GL11.glPushMatrix();
 
-		GL11.glTranslated(x, y, z);
-		GL11.glTranslated(+.5, +.5, +.5);
+		GL11.glTranslatef((float)x, (float)y, (float)z);
+		GL11.glTranslatef(+.5f, +.5f, +.5f);
 		GL11.glRotatef(gen.facing==3?180: gen.facing==4?90: gen.facing==5?-90: 0, 0,1,0);
 		
 		if(gen.mirrored)
@@ -55,7 +55,7 @@ public class TileRenderDieselGenerator extends TileRenderIE
 		}
 		
 		ClientUtils.bindAtlas(0);
-		GL11.glTranslated(0, .1875, 2.96875);
+		GL11.glTranslatef(0f, .1875f, 2.96875f);
 		GL11.glRotatef(gen.fanRotation+(gen.fanRotationStep*f), 0,0,1);
 		model.model.renderOnly("fan");
 		

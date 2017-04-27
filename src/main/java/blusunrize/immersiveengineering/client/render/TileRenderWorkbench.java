@@ -35,7 +35,7 @@ public class TileRenderWorkbench extends TileRenderIE
 			return;
 		
 		GL11.glPushMatrix();
-		GL11.glTranslated(x,y,z);
+		GL11.glTranslatef((float)x,(float)y,(float)z);
 
 		int facing = bench.facing;
 		int off = bench.dummyOffset;
@@ -44,7 +44,7 @@ public class TileRenderWorkbench extends TileRenderIE
 		float angle = facing==2?180:facing==4?-90:facing==5?90:0;
 
 		GL11.glPushMatrix();
-		GL11.glTranslated(facing>3?.5: facing==2&&mirror?1: facing==3&&!mirror?1:0, 0, facing<4?.5: facing==5&&mirror?1: facing==4&&!mirror?1:0);
+		GL11.glTranslatef(facing>3?.5f: facing==2&&mirror?1f: facing==3&&!mirror?1f:0f, 0f, facing<4?.5f: facing==5&&mirror?1f: facing==4&&!mirror?1f:0f);
 		GL11.glRotatef(angle, 0,1,0);
 		if(mirror)
 		{
@@ -60,9 +60,9 @@ public class TileRenderWorkbench extends TileRenderIE
 		}
 		GL11.glPopMatrix();
 
-		GL11.glTranslated(.5,1.05,.5);
+		GL11.glTranslatef(.5f,1.05f,.5f);
 		float offset = off * (mirror?1f:.825f);
-		GL11.glTranslated(facing<4?offset:0,0,facing>3?offset:0);
+		GL11.glTranslatef(facing<4?offset:0,0,facing>3?offset:0);
 		angle = facing==2?90:facing==4?180:facing==5?0:-90;
 		GL11.glRotatef(angle, 0,1,0);
 		GL11.glRotatef(-90, 1,0,0);

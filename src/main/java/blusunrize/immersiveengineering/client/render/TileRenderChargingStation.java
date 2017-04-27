@@ -60,22 +60,22 @@ public class TileRenderChargingStation extends TileRenderIE
 		if(tile.getWorldObj()!=null)
 		{
 			GL11.glPushMatrix();
-			GL11.glTranslated(x+.5, y+.3125, z+.5);
+			GL11.glTranslatef((float)x+.5f, (float)y+.3125f, (float)z+.5f);
 			GL11.glScalef(.75f,.75f,.75f);
 			ClientUtils.bindAtlas(0);
 			TileEntityChargingStation charger = (TileEntityChargingStation)tile;
 			switch(charger.facing)
 			{
 			case 2:
-				GL11.glRotated(180, 0,1,0);
+				GL11.glRotatef(180f, 0f,1f,0f);
 				break;
 			case 3:
 				break;
 			case 4:
-				GL11.glRotated(-90, 0,1,0);
+				GL11.glRotatef(-90, 0,1,0);
 				break;
 			case 5:
-				GL11.glRotated(90, 0,1,0);
+				GL11.glRotatef(90, 0,1,0);
 				break;
 			}
 			if(charger.inventory!=null)

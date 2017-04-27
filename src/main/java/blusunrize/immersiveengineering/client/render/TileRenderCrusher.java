@@ -45,7 +45,7 @@ public class TileRenderCrusher extends TileRenderIE
 			return;
 		GL11.glPushMatrix();
 
-		GL11.glTranslated(x+.5, y+1.5, z+.5);
+		GL11.glTranslatef((float)x+.5f, (float)y+1.5f, (float)z+.5f);
 		GL11.glRotatef(crusher.facing==2?180: crusher.facing==4?-90: crusher.facing==5?90: 0, 0,1,0);
 
 		if(crusher.mirrored)
@@ -58,12 +58,12 @@ public class TileRenderCrusher extends TileRenderIE
 		boolean b = crusher.hasPower&&((crusher.active&&crusher.process>0)||crusher.mobGrinding||crusher.grindingTimer>0);
 		float angle = crusher.barrelRotation+(b?18*f:0);
 		
-		GL11.glTranslated(17/16f,14/16f,-8.5/16f);
-		GL11.glRotatef(angle, 1,0,0);
+		GL11.glTranslatef(17/16f,14/16f,-8.5f/16f);
+		GL11.glRotatef(angle, 1f,0f,0f);
 		model.model.renderOnly("drum1");
-		GL11.glRotatef(-angle, 1,0,0);
-		GL11.glTranslated(0,0,17/16f);
-		GL11.glRotatef(-angle, 1,0,0);
+		GL11.glRotatef(-angle, 1f,0f,0f);
+		GL11.glTranslatef(0,0,17/16f);
+		GL11.glRotatef(-angle, 1f,0f,0f);
 		model.model.renderOnly("drum0");
 		
 		if(crusher.mirrored)

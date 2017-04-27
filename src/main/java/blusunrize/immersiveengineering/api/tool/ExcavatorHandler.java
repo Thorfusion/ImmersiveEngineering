@@ -110,7 +110,7 @@ public class ExcavatorHandler
 		{
 			MineralMix mix = null;
 			Random r = world.getChunkFromChunkCoords(chunkX, chunkZ).getRandomWithSeed(940610);
-			double dd = r.nextDouble();
+			double dd = r.nextFloat();
 			boolean empty = dd>.125;
 			int query = r.nextInt(); 
 			if(!empty)

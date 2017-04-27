@@ -61,10 +61,10 @@ public class SkylineHelper
 
 		Vec3[] steps = getConnectionCatenary(connection,vStart,vEnd);
 
-		double dx = (steps[0].xCoord-vStart.xCoord);
+		/*double dx = (steps[0].xCoord-vStart.xCoord);
 		double dy = (steps[0].yCoord-vStart.yCoord);
 		double dz = (steps[0].zCoord-vStart.zCoord);
-		double d = 1;//connection.length;
+		double d = 1;*///connection.length;
 		//						Math.sqrt(dx*dx+dz*dz+dy*dy);
 
 		//		Vec3 moveVec = Vec3.createVectorHelper(dx,dy,dz);

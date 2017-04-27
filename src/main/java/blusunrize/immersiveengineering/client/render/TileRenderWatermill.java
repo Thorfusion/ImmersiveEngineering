@@ -21,10 +21,10 @@ public class TileRenderWatermill extends TileEntitySpecialRenderer
 			return;
 
 		GL11.glPushMatrix();
-		GL11.glTranslated(x+.5, y+.5, z+.5);
+		GL11.glTranslatef((float)x+.5f, (float)y+.5f, (float)z+.5f);
 
 		if(wheel.facing==4||wheel.facing==5)
-			GL11.glRotated(90, 0, 1, 0);
+			GL11.glRotatef(90f, 0f, 1f, 0f);
 
 		float rot = 360*wheel.rotation-(!wheel.canTurn||wheel.rotation==0||wheel.rotation-wheel.prevRotation<4?0:wheel.facing>3?-f:f);
 		model.setRotateAngle(model.Axle, 0, 0, (float)Math.toRadians(rot));

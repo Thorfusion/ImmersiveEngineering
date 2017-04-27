@@ -35,7 +35,7 @@ public class EntityRenderRailgunShot extends Render
 	public static void renderRailgunProjectile(double x, double y, double z, double yaw, double pitch, int[][] colourMap)
 	{
 		GL11.glPushMatrix();
-		GL11.glTranslated(x, y, z);
+		GL11.glTranslatef((float)x, (float)y, (float)z);
 		GL11.glEnable(GL12.GL_RESCALE_NORMAL);
 		Tessellator tes = ClientUtils.tes();
 
@@ -45,8 +45,8 @@ public class EntityRenderRailgunShot extends Render
 		OpenGlHelper.glBlendFunc(770, 771, 1, 0);
 
 		GL11.glDisable(GL11.GL_CULL_FACE);
-		GL11.glRotated(yaw, 0.0F, 1.0F, 0.0F);
-		GL11.glRotated(pitch, 0.0F, 0.0F, 1.0F);
+		GL11.glRotatef((float)yaw, 0.0F, 1.0F, 0.0F);
+		GL11.glRotatef((float)pitch, 0.0F, 0.0F, 1.0F);
 
 		GL11.glScalef(.25f, .25f, .25f);
 
