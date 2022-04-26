@@ -1,34 +1,62 @@
 buildscript {
     repositories {
-        mavenCentral()
         maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+            name 'central'
+            url 'https://maven.thorfusion.com/artifactory/central/'
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.0.+') {
+            changing = true
+        }
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.27.1"
     }
 }
 
-apply plugin: 'forge'
+repositories {
+    maven {
+        name 'ic2'
+        url 'https://maven.thorfusion.com/artifactory/ic2/'
+    }
+    maven {
+        name 'central'
+        url 'https://maven.thorfusion.com/artifactory/central/'
+    }
 
+}
+
+apply plugin: 'forge'
+apply plugin: 'java'
+
+// Define properties file
+ext.configFile = file "build.properties"
+
+configFile.withReader {
+    // Load config. It shall from now be referenced as simply config or project.config
+    def prop = new Properties()
+    prop.load(it)
+    project.ext.config = new ConfigSlurper().parse prop
+}
+
+dependencies {
+    compile "codechicken:CodeChickenLib:${config.minecraft_version}-${config.CCLIB_version}:dev"
+    compile "codechicken:ForgeMultipart:${config.minecraft_version}-${config.FMP_version}:dev"
+    compile "codechicken:NotEnoughItems:${config.minecraft_version}-${config.NEI_version}:dev"
+    compile "codechicken:CodeChickenCore:${config.minecraft_version}-${config.CCC_version}:dev"
+    compile "codechicken:CodeChickenCore:${config.minecraft_version}-${config.CCC_version}:dev"
+    compile "net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev"
+}
 version = "0.7.8"
+version = "${config.minecraft_version}-${config.mod_version}." + (System.env.BUILD_NUMBER ?: "Terralization")
 group= "blusunrize"
 archivesBaseName = "ImmersiveEngineering"
 
-apply plugin: 'java'
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 minecraft {
-    version = "1.7.10-10.13.4.1566-1.7.10"
-	replace '${version}', project.version
-    runDir = "eclipse"
+    version = config.minecraft_version + "-" + config.forge_version
 }
 
 dependencies {
