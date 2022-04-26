@@ -27,6 +27,7 @@ repositories {
 
 apply plugin: 'forge'
 apply plugin: 'java'
+apply plugin: 'maven'
 
 // Define properties file
 ext.configFile = file "build.properties"
@@ -38,6 +39,7 @@ configFile.withReader {
     project.ext.config = new ConfigSlurper().parse prop
 }
 
+
 dependencies {
     compile "codechicken:CodeChickenLib:${config.minecraft_version}-${config.CCLIB_version}:dev"
     compile "codechicken:ForgeMultipart:${config.minecraft_version}-${config.FMP_version}:dev"
@@ -45,6 +47,9 @@ dependencies {
     compile "codechicken:CodeChickenCore:${config.minecraft_version}-${config.CCC_version}:dev"
     compile "codechicken:CodeChickenCore:${config.minecraft_version}-${config.CCC_version}:dev"
     compile "net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev"
+    compile "mcp.mobius.waila:Waila:1.5.10_1.7.10:dev"
+    compile 'org.eclipse.collections:eclipse-collections:10.0.0'
+    // compile "com.gregoriust.gregtech:gregtech_1.7.10:6.15.00:dev"
 }
 version = "0.7.8"
 version = "${config.minecraft_version}-${config.mod_version}." + (System.env.BUILD_NUMBER ?: "Terralization")
