@@ -104,7 +104,15 @@ task apiZip(type: Zip) {
 	classifier = 'api'
 }
 
+task apiJar(type: Jar) {
+    from(sourceSets.main.java) {
+        include "blusunrize/immersiveengineering/api/**"
+    }
+    classifier = 'api'
+}
+
 artifacts {
 	archives deobfJar
 	archives apiZip
+    archives apiJar
 }
