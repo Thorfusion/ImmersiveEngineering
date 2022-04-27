@@ -26,8 +26,11 @@ repositories {
 }
 
 apply plugin: 'forge'
+apply plugin: 'idea'
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: "com.jfrog.artifactory"
+apply plugin: "maven-publish"
+apply plugin: "maven"
 
 // Define properties file
 ext.configFile = file "build.properties"
@@ -69,7 +72,7 @@ dependencies {
 }
 
 jar {
-        manifest {
+    manifest {
         attributes 'FMLAT': 'ImmersiveEngineering_at.cfg'
     }
 }
@@ -115,4 +118,39 @@ artifacts {
 	archives deobfJar
 	archives apiZip
     archives apiJar
+}
+
+artifactory {
+    contextUrl = System.getenv("MAVEN_URL")
+    publish {
+        repository {
+            repoKey = 'thorfusion'
+            username = System.getenv("MAVEN_USERNAME")
+            password = System.getenv("MAVEN_PASSWORD")
+            maven = true
+        }
+        defaults {
+            publications('mavenJava')
+        }
+        publishBuildInfo = false
+        publishArtifacts = true
+        publishPom = true
+    }
+    resolve {
+        repository {
+            repoKey = 'central'
+            username = System.getenv("MAVEN_USERNAME")
+            password = System.getenv("MAVEN_PASSWORD")
+            maven = true
+
+        }
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
