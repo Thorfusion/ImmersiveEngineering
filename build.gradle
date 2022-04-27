@@ -51,8 +51,8 @@ dependencies {
     compile 'org.eclipse.collections:eclipse-collections:10.0.0'
     // compile "com.gregoriust.gregtech:gregtech_1.7.10:6.15.00:dev"
 }
-version = "0.7.8"
-version = "${config.minecraft_version}-${config.mod_version}." + (System.env.BUILD_NUMBER ?: "Terralization")
+
+version = "${config.mod_version}." + (System.env.BUILD_NUMBER ?: "Thorfusion")
 group= "blusunrize"
 archivesBaseName = "ImmersiveEngineering"
 
