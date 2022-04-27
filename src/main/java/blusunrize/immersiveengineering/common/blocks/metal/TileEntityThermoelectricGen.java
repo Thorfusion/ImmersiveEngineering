@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
+import blusunrize.immersiveengineering.api.energy.ThermoelectricHandler;
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
+import cofh.api.energy.IEnergyConnection;
+import cofh.api.energy.IEnergyReceiver;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDynamicLiquid;
 import net.minecraft.block.BlockStaticLiquid;
@@ -10,11 +15,6 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.IFluidBlock;
-import blusunrize.immersiveengineering.api.energy.ThermoelectricHandler;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
-import cofh.api.energy.IEnergyConnection;
-import cofh.api.energy.IEnergyReceiver;
 
 public class TileEntityThermoelectricGen extends TileEntityIEBase implements IEnergyConnection
 {

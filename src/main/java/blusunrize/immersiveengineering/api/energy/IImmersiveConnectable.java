@@ -1,8 +1,8 @@
 package blusunrize.immersiveengineering.api.energy;
 
-import net.minecraft.util.Vec3;
 import blusunrize.immersiveengineering.api.TargetingInfo;
 import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
+import net.minecraft.util.Vec3;
 
 /**
  * @author BluSunrize - 08.03.2015

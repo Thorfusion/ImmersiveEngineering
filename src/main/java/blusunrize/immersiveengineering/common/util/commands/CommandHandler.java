@@ -1,12 +1,12 @@
 package blusunrize.immersiveengineering.common.util.commands;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import blusunrize.immersiveengineering.common.util.Lib;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentTranslation;
-import blusunrize.immersiveengineering.common.util.Lib;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CommandHandler extends CommandBase
 {

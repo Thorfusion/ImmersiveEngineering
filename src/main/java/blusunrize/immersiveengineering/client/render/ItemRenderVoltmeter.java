@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.client.render;
 
+import blusunrize.immersiveengineering.client.ClientUtils;
+import cofh.api.energy.IEnergyReceiver;
 import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.entity.Render;
@@ -11,12 +13,8 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.model.obj.WavefrontObject;
 import net.minecraftforge.common.util.ForgeDirection;
-
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
-
-import blusunrize.immersiveengineering.client.ClientUtils;
-import cofh.api.energy.IEnergyReceiver;
 
 public class ItemRenderVoltmeter implements IItemRenderer
 {

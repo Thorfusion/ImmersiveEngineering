@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.common.gui;
 
+import blusunrize.immersiveengineering.api.crafting.ArcFurnaceRecipe;
+import blusunrize.immersiveengineering.common.IEContent;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityArcFurnace;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import blusunrize.immersiveengineering.api.crafting.ArcFurnaceRecipe;
-import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityArcFurnace;
 
 public class ContainerArcFurnace extends Container
 {

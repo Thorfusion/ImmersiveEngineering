@@ -1,29 +1,8 @@
 package blusunrize.immersiveengineering.client.render;
 
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityArcFurnace;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityAssembler;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBottlingMachine;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityDieselGenerator;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityExcavator;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFermenter;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityLightningRod;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityMetalPress;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRefinery;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntitySqueezer;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockArcFurnace;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockBucketWheel;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockCrusher;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockDieselGenerator;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockExcavatorDemo;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockMetalPress;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockRefinery;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockSheetmetalTank;
-import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockSilo;
+import blusunrize.immersiveengineering.common.blocks.metal.*;
+import blusunrize.immersiveengineering.common.blocks.multiblocks.*;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
@@ -32,6 +11,7 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
+import org.lwjgl.opengl.GL11;
 
 public class BlockRenderMetalMultiblocks implements ISimpleBlockRenderingHandler
 {

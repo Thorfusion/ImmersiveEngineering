@@ -1,7 +1,10 @@
 package blusunrize.immersiveengineering.client.gui;
 
-import java.util.ArrayList;
-
+import blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe;
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityModWorkbench;
+import blusunrize.immersiveengineering.common.gui.ContainerModWorkbench;
+import blusunrize.immersiveengineering.common.gui.IESlot;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.RenderHelper;
@@ -10,14 +13,9 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.oredict.OreDictionary;
-
 import org.lwjgl.opengl.GL11;
 
-import blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe;
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityModWorkbench;
-import blusunrize.immersiveengineering.common.gui.ContainerModWorkbench;
-import blusunrize.immersiveengineering.common.gui.IESlot;
+import java.util.ArrayList;
 
 public class GuiModWorkbench extends GuiContainer
 {

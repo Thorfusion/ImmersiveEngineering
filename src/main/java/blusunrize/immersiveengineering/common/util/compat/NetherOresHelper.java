@@ -1,8 +1,8 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import java.lang.reflect.Method;
-
 import cpw.mods.fml.common.Loader;
+
+import java.lang.reflect.Method;
 
 
 public class NetherOresHelper

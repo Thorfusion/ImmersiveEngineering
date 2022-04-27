@@ -1,8 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import java.util.ArrayList;
-import java.util.Set;
-
 import blusunrize.immersiveengineering.api.TargetingInfo;
 import blusunrize.immersiveengineering.api.energy.IImmersiveConnectable;
 import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler;
@@ -13,6 +10,9 @@ import blusunrize.immersiveengineering.common.util.Utils;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
+
+import java.util.ArrayList;
+import java.util.Set;
 
 public class TileEntityEnergyMeter extends TileEntityImmersiveConnectable
 {

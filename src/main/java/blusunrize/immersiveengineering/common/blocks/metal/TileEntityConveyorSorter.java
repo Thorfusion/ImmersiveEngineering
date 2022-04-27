@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import java.util.ArrayList;
-
 import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 import blusunrize.immersiveengineering.common.util.Utils;
 import net.minecraft.entity.item.EntityItem;
@@ -14,6 +12,8 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.oredict.OreDictionary;
+
+import java.util.ArrayList;
 
 public class TileEntityConveyorSorter extends TileEntityIEBase implements ISidedInventory
 {

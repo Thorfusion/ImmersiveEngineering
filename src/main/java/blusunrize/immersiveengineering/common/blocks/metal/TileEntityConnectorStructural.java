@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
+import blusunrize.immersiveengineering.api.TargetingInfo;
+import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
+import blusunrize.immersiveengineering.api.energy.WireType;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.Vec3;
 import net.minecraftforge.common.util.ForgeDirection;
-import blusunrize.immersiveengineering.api.energy.WireType;
-import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
-import blusunrize.immersiveengineering.api.TargetingInfo;
 
 public class TileEntityConnectorStructural extends TileEntityConnectorLV
 {

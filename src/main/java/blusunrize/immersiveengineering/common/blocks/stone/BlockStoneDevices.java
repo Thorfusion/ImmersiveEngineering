@@ -1,8 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks.stone;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.client.render.BlockRenderStoneDevices;
 import blusunrize.immersiveengineering.common.blocks.BlockIEBase;
@@ -27,6 +24,9 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BlockStoneDevices extends BlockIEBase
 {

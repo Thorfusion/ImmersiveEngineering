@@ -1,8 +1,5 @@
 package blusunrize.immersiveengineering.common.items;
 
-import java.util.HashSet;
-import java.util.List;
-
 import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
 import blusunrize.immersiveengineering.common.util.Utils;
 import cpw.mods.fml.relauncher.Side;
@@ -17,6 +14,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidContainerItem;
 import net.minecraftforge.fluids.IFluidHandler;
+
+import java.util.HashSet;
+import java.util.List;
 
 public class ItemJerrycan extends ItemIEBase implements IFluidContainerItem
 {

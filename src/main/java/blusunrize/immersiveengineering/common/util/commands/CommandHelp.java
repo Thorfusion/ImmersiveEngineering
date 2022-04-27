@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.common.util.commands;
 
-import java.util.ArrayList;
-
+import blusunrize.immersiveengineering.common.util.Lib;
+import blusunrize.immersiveengineering.common.util.commands.CommandHandler.IESubCommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.StatCollector;
-import blusunrize.immersiveengineering.common.util.Lib;
-import blusunrize.immersiveengineering.common.util.commands.CommandHandler.IESubCommand;
+
+import java.util.ArrayList;
 
 public class CommandHelp extends IESubCommand
 {

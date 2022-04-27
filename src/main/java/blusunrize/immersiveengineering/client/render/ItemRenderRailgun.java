@@ -1,11 +1,5 @@
 package blusunrize.immersiveengineering.client.render;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.api.shader.IShaderItem;
 import blusunrize.immersiveengineering.api.shader.ShaderCase;
 import blusunrize.immersiveengineering.api.tool.RailgunHandler;
@@ -26,6 +20,11 @@ import net.minecraft.util.MathHelper;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.model.obj.GroupObject;
 import net.minecraftforge.client.model.obj.WavefrontObject;
+import org.lwjgl.opengl.GL11;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ItemRenderRailgun implements IItemRenderer
 {

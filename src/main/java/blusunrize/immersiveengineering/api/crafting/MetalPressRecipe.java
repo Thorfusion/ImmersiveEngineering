@@ -1,15 +1,14 @@
 package blusunrize.immersiveengineering.api.crafting;
 
+import blusunrize.immersiveengineering.api.ApiUtils;
+import blusunrize.immersiveengineering.api.ComparableItemStack;
+import com.google.common.collect.ArrayListMultimap;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import com.google.common.collect.ArrayListMultimap;
-
-import blusunrize.immersiveengineering.api.ApiUtils;
-import blusunrize.immersiveengineering.api.ComparableItemStack;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * @author BluSunrize - 07.01.2016

@@ -1,8 +1,9 @@
 package blusunrize.immersiveengineering.common.blocks;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.EventHandler;
+import blusunrize.immersiveengineering.common.blocks.IEBlockInterfaces.ISpawnInterdiction;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFloodlight;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
@@ -13,10 +14,9 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.EventHandler;
-import blusunrize.immersiveengineering.common.blocks.IEBlockInterfaces.ISpawnInterdiction;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFloodlight;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BlockFakeLight extends BlockIEBase
 {

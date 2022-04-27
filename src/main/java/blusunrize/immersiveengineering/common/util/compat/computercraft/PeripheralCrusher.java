@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.common.util.compat.computercraft;
 
-import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
-
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
 import dan200.computercraft.api.lua.ILuaContext;
 import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+
+import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
 
 public class PeripheralCrusher extends IEPeripheral
 {

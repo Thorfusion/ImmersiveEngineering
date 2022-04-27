@@ -1,8 +1,4 @@
 package blusunrize.immersiveengineering.common.util.compat.computercraft;
-import static blusunrize.immersiveengineering.common.util.Utils.saveFluidTank;
-import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
-
-import java.util.Map;
 
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBottlingMachine;
 import dan200.computercraft.api.lua.ILuaContext;
@@ -10,6 +6,11 @@ import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+
+import java.util.Map;
+
+import static blusunrize.immersiveengineering.common.util.Utils.saveFluidTank;
+import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
 
 public class PeripheralBottlingMachine extends IEPeripheral {
 	public static final String[] cmds = {"getFluid", "getEmptyCannister", "getEmptyCannisterCount", "getFilledCannister", "getFilledCannisterCount", "getEnergyStored", "getMaxEnergyStored", "setEnabled"};

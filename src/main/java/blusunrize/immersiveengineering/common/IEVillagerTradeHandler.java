@@ -1,8 +1,5 @@
 package blusunrize.immersiveengineering.common;
 
-import java.util.ArrayList;
-import java.util.Random;
-
 import blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe;
 import blusunrize.immersiveengineering.api.shader.ShaderRegistry;
 import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
@@ -17,6 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.village.MerchantRecipe;
 import net.minecraft.village.MerchantRecipeList;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class IEVillagerTradeHandler implements IVillageTradeHandler
 {

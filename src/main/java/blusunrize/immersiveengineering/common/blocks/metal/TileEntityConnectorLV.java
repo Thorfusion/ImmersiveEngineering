@@ -1,12 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import static blusunrize.immersiveengineering.common.util.Utils.toIIC;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
 import blusunrize.immersiveengineering.api.energy.IImmersiveConnectable;
 import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler;
 import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.AbstractConnection;
@@ -30,6 +23,13 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 import net.minecraftforge.common.util.ForgeDirection;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import static blusunrize.immersiveengineering.common.util.Utils.toIIC;
 
 @Optional.Interface(iface = "ic2.api.energy.tile.IEnergySink", modid = "IC2")
 public class TileEntityConnectorLV extends TileEntityImmersiveConnectable implements IEnergyHandler, ic2.api.energy.tile.IEnergySink

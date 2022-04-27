@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import java.lang.reflect.Field;
-
+import blusunrize.immersiveengineering.common.Config;
+import cpw.mods.fml.common.Loader;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import blusunrize.immersiveengineering.common.Config;
-import cpw.mods.fml.common.Loader;
+
+import java.lang.reflect.Field;
 
 public class EtFuturumHelper extends IECompatModule
 {

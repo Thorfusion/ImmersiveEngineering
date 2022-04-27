@@ -1,11 +1,11 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-
-import net.minecraft.item.ItemStack;
 import blusunrize.immersiveengineering.common.IEContent;
 import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDecoration;
+import net.minecraft.item.ItemStack;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
 
 
 public class CarpentersHelper extends IECompatModule

@@ -1,11 +1,11 @@
 package blusunrize.immersiveengineering.api.energy;
 
-import java.util.LinkedHashSet;
-
+import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
+
+import java.util.LinkedHashSet;
 
 /**
  * @author BluSunrize - 08.03.2015<br>

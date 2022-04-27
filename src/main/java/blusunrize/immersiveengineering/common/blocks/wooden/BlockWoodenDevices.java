@@ -1,8 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks.wooden;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.api.IPostBlock;
 import blusunrize.immersiveengineering.client.render.BlockRenderWoodenDevices;
@@ -35,6 +32,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidContainerItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Optional.Interface(iface = "blusunrize.aquatweaks.api.IAquaConnectable", modid = "AquaTweaks")
 public class BlockWoodenDevices extends BlockIEBase implements IPostBlock, blusunrize.aquatweaks.api.IAquaConnectable

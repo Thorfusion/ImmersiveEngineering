@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.client.render;
 
-import java.util.ArrayList;
-
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.client.models.ModelIEObj;
 import blusunrize.immersiveengineering.common.IEContent;
@@ -12,6 +10,8 @@ import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
+
+import java.util.ArrayList;
 
 public class TileRenderFluidPipe extends TileRenderIE
 {

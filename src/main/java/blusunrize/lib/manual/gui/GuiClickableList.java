@@ -3,7 +3,6 @@ package blusunrize.lib.manual.gui;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiButton;
-
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 

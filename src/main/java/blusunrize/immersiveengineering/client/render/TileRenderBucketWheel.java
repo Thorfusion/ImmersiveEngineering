@@ -1,5 +1,8 @@
 package blusunrize.immersiveengineering.client.render;
 
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBucketWheel;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.init.Blocks;
@@ -10,12 +13,7 @@ import net.minecraftforge.client.model.obj.Face;
 import net.minecraftforge.client.model.obj.GroupObject;
 import net.minecraftforge.client.model.obj.TextureCoordinate;
 import net.minecraftforge.client.model.obj.WavefrontObject;
-
 import org.lwjgl.opengl.GL11;
-
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBucketWheel;
 
 public class TileRenderBucketWheel extends TileEntitySpecialRenderer
 {

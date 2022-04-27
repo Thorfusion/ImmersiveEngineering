@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.common.util.compat.hydcraft;
 
+import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
+import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Potion;
+import blusunrize.immersiveengineering.common.util.IEPotions;
+import blusunrize.immersiveengineering.common.util.compat.IECompatModule;
+import cpw.mods.fml.common.registry.GameRegistry;
 import k4unl.minecraft.Hydraulicraft.api.HCApi;
 import k4unl.minecraft.Hydraulicraft.api.recipes.FluidShapedOreRecipe;
 import net.minecraft.block.Block;
@@ -9,11 +14,6 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
-import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
-import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Potion;
-import blusunrize.immersiveengineering.common.util.IEPotions;
-import blusunrize.immersiveengineering.common.util.compat.IECompatModule;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class HydCraftHelper extends IECompatModule
 {

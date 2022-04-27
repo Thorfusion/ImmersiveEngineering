@@ -1,13 +1,11 @@
 package blusunrize.immersiveengineering.api.shader;
 
+import blusunrize.immersiveengineering.api.IEApi;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-
 import org.lwjgl.opengl.GL11;
-
-import blusunrize.immersiveengineering.api.IEApi;
 
 public class ShaderCaseRevolver extends ShaderCase
 {

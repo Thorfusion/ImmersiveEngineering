@@ -1,5 +1,9 @@
 package blusunrize.immersiveengineering.client.render;
 
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.common.blocks.metal.*;
+import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
@@ -8,21 +12,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.util.ForgeDirection;
-
 import org.lwjgl.opengl.GL11;
-
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConnectorHV;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConnectorLV;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConnectorMV;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConveyorBelt;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRelayHV;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntitySampleDrill;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityTransformer;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityTransformerHV;
-import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
-import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class BlockRenderMetalDevices implements ISimpleBlockRenderingHandler
 {

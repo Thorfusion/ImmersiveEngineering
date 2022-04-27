@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import java.util.List;
-
 import blusunrize.immersiveengineering.common.IEContent;
 import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
 import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWoodenBarrel;
@@ -16,6 +14,8 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
+
+import java.util.List;
 
 public class ItemBlockMetalDevices2 extends ItemBlockIEBase
 {

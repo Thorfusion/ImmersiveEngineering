@@ -1,9 +1,5 @@
 package blusunrize.immersiveengineering.client.gui;
 
-import java.util.ArrayList;
-
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityAssembler;
@@ -17,6 +13,9 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumChatFormatting;
+import org.lwjgl.opengl.GL11;
+
+import java.util.ArrayList;
 
 public class GuiAssembler extends GuiContainer
 {

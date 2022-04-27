@@ -1,17 +1,17 @@
 package blusunrize.immersiveengineering.common.util.compat.computercraft;
 
-import static blusunrize.immersiveengineering.common.util.Utils.saveFluidTank;
-import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityAssembler;
 import dan200.computercraft.api.lua.ILuaContext;
 import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import static blusunrize.immersiveengineering.common.util.Utils.saveFluidTank;
+import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
 
 public class PeripheralAssembler extends IEPeripheral {
 	public static final String[] cmds = {"hasIngredients", "setEnabled", "getRecipe", "isValidRecipe", "getTank", "getMaxEnergyStored", "getEnergyStored", "getStackInSlot", "getBufferStack"};

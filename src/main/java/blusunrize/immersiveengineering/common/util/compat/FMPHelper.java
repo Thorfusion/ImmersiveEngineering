@@ -1,9 +1,9 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import net.minecraft.item.ItemStack;
 import blusunrize.immersiveengineering.common.IEContent;
 import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDecoration;
 import cpw.mods.fml.common.event.FMLInterModComms;
+import net.minecraft.item.ItemStack;
 
 public class FMPHelper extends IECompatModule
 {

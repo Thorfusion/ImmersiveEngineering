@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.common.items;
 
-import java.util.List;
-
 import blusunrize.immersiveengineering.api.shader.IShaderEquipableItem;
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
 import blusunrize.immersiveengineering.api.tool.ITool;
@@ -22,6 +20,8 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidContainerItem;
+
+import java.util.List;
 
 public class ItemChemthrower extends ItemUpgradeableTool implements IShaderEquipableItem, IFluidContainerItem, ITool
 {

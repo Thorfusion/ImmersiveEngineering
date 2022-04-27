@@ -1,10 +1,5 @@
 package blusunrize.immersiveengineering.client.render;
 
-import java.util.ArrayList;
-
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.IIcon;
 import blusunrize.immersiveengineering.api.energy.WireType;
 import blusunrize.immersiveengineering.client.models.ModelIEObj;
 import blusunrize.immersiveengineering.common.IEContent;
@@ -12,6 +7,11 @@ import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityTransformer;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityTransformerHV;
 import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.IIcon;
+
+import java.util.ArrayList;
 
 public class TileRenderTransformer extends TileRenderIE
 {

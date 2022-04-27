@@ -1,9 +1,8 @@
 package blusunrize.lib.manual;
 
-import net.minecraft.client.gui.FontRenderer;
 import blusunrize.lib.manual.gui.GuiManual;
-
 import com.google.common.collect.ArrayListMultimap;
+import net.minecraft.client.gui.FontRenderer;
 
 public abstract class ManualInstance
 {

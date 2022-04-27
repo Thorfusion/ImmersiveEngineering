@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks;
 
-import java.util.List;
-
 import blusunrize.immersiveengineering.common.util.Lib;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -10,6 +8,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
+
+import java.util.List;
 
 public class ItemBlockIEBase extends ItemBlock
 {

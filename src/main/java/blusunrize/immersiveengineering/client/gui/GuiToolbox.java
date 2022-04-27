@@ -1,9 +1,5 @@
 package blusunrize.immersiveengineering.client.gui;
 
-import java.util.ArrayList;
-
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.gui.ContainerToolbox;
 import blusunrize.immersiveengineering.common.util.Lib;
@@ -14,6 +10,9 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import org.lwjgl.opengl.GL11;
+
+import java.util.ArrayList;
 
 public class GuiToolbox extends GuiContainer
 {

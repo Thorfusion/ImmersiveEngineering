@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.common.gui;
 
-import java.util.List;
-
 import blusunrize.immersiveengineering.api.crafting.ArcFurnaceRecipe;
 import blusunrize.immersiveengineering.api.crafting.BlastFurnaceRecipe;
 import blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe;
@@ -24,6 +22,8 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.oredict.OreDictionary;
+
+import java.util.List;
 
 public abstract class IESlot extends Slot
 {

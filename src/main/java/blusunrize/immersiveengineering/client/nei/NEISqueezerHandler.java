@@ -1,15 +1,5 @@
 package blusunrize.immersiveengineering.client.nei;
 
-import static codechicken.lib.gui.GuiDraw.changeTexture;
-import static codechicken.lib.gui.GuiDraw.drawTexturedModalRect;
-
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.util.Arrays;
-import java.util.List;
-
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.api.energy.DieselHandler;
 import blusunrize.immersiveengineering.api.energy.DieselHandler.SqueezerRecipe;
 import blusunrize.immersiveengineering.client.ClientUtils;
@@ -29,6 +19,14 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
+import org.lwjgl.opengl.GL11;
+
+import java.awt.*;
+import java.util.Arrays;
+import java.util.List;
+
+import static codechicken.lib.gui.GuiDraw.changeTexture;
+import static codechicken.lib.gui.GuiDraw.drawTexturedModalRect;
 
 public class NEISqueezerHandler extends TemplateRecipeHandler
 {

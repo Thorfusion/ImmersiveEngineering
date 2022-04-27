@@ -1,13 +1,11 @@
 package blusunrize.immersiveengineering.client.render;
 
+import blusunrize.immersiveengineering.client.ClientUtils;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.obj.WavefrontObject;
-
 import org.lwjgl.opengl.GL11;
-
-import blusunrize.immersiveengineering.client.ClientUtils;
 
 public class EntityRenderSkycrate extends Render
 {

@@ -1,7 +1,8 @@
 package blusunrize.immersiveengineering.common.blocks.wooden;
 
-import java.util.List;
-
+import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
+import blusunrize.immersiveengineering.common.util.IEAchievements;
+import blusunrize.immersiveengineering.common.util.Lib;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -11,9 +12,8 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidStack;
-import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
-import blusunrize.immersiveengineering.common.util.IEAchievements;
-import blusunrize.immersiveengineering.common.util.Lib;
+
+import java.util.List;
 
 public class ItemBlockWoodenDevices extends ItemBlockIEBase
 {

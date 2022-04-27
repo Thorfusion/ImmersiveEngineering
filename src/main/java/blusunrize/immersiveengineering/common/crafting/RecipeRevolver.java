@@ -1,11 +1,11 @@
 package blusunrize.immersiveengineering.common.crafting;
 
+import blusunrize.immersiveengineering.common.IEContent;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.OreDictionary;
-import blusunrize.immersiveengineering.common.IEContent;
 
 public class RecipeRevolver implements IRecipe
 {

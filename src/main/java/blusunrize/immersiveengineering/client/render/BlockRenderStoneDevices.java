@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.client.render;
 
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.blocks.multiblocks.MultiblockBlastFurnaceAdvanced;
 import blusunrize.immersiveengineering.common.blocks.stone.TileEntityBlastFurnaceAdvanced;
@@ -11,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
+import org.lwjgl.opengl.GL11;
 
 public class BlockRenderStoneDevices implements ISimpleBlockRenderingHandler
 {

@@ -1,8 +1,5 @@
 package blusunrize.immersiveengineering.common.items;
 
-import java.util.HashSet;
-import java.util.List;
-
 import blusunrize.immersiveengineering.api.shader.IShaderEquipableItem;
 import blusunrize.immersiveengineering.api.tool.ITool;
 import blusunrize.immersiveengineering.api.tool.RailgunHandler;
@@ -25,6 +22,9 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
+
+import java.util.HashSet;
+import java.util.List;
 
 public class ItemRailgun extends ItemUpgradeableTool implements IShaderEquipableItem, IEnergyContainerItem, IZoomTool, ITool
 {

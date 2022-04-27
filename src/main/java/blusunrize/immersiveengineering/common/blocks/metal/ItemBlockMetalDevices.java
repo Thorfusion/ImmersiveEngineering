@@ -1,8 +1,9 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import java.util.List;
-
 import blusunrize.immersiveengineering.api.IPostBlock;
+import blusunrize.immersiveengineering.common.blocks.BlockIEBase;
+import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
+import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,9 +14,8 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
-import blusunrize.immersiveengineering.common.blocks.BlockIEBase;
-import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
-import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
+
+import java.util.List;
 
 public class ItemBlockMetalDevices extends ItemBlockIEBase
 {

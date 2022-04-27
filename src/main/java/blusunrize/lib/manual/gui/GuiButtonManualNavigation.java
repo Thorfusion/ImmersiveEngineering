@@ -1,12 +1,10 @@
 package blusunrize.lib.manual.gui;
 
+import blusunrize.lib.manual.ManualUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.renderer.OpenGlHelper;
-
 import org.lwjgl.opengl.GL11;
-
-import blusunrize.lib.manual.ManualUtils;
 
 public class GuiButtonManualNavigation extends GuiButton
 {

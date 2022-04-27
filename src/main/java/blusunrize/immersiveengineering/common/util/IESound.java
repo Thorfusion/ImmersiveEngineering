@@ -1,12 +1,12 @@
 package blusunrize.immersiveengineering.common.util;
 
-import java.util.Iterator;
-
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.common.blocks.IEBlockInterfaces.ISoundTile;
 import net.minecraft.client.audio.ITickableSound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.blocks.IEBlockInterfaces.ISoundTile;
+
+import java.util.Iterator;
 
 public class IESound implements ITickableSound
 {

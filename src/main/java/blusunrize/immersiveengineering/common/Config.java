@@ -1,12 +1,5 @@
 package blusunrize.immersiveengineering.common;
 
-import java.util.Calendar;
-import java.util.HashMap;
-
-import com.google.common.collect.Sets;
-
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.common.config.Property;
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.api.IEApi;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConnectorLV;
@@ -14,7 +7,13 @@ import blusunrize.immersiveengineering.common.items.ItemJerrycan;
 import blusunrize.immersiveengineering.common.util.IELogger;
 import blusunrize.immersiveengineering.common.util.IEPotions;
 import blusunrize.immersiveengineering.common.util.compat.IECompatModule;
+import com.google.common.collect.Sets;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Property;
+
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class Config
 {

@@ -1,7 +1,6 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
-import java.util.List;
-
+import blusunrize.immersiveengineering.api.crafting.CrusherRecipe;
 import minetweaker.IUndoableAction;
 import minetweaker.MineTweakerAPI;
 import minetweaker.api.item.IIngredient;
@@ -10,7 +9,8 @@ import net.minecraft.item.ItemStack;
 import stanhebben.zenscript.annotations.Optional;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
-import blusunrize.immersiveengineering.api.crafting.CrusherRecipe;
+
+import java.util.List;
 
 @ZenClass("mods.immersiveengineering.Crusher")
 public class Crusher

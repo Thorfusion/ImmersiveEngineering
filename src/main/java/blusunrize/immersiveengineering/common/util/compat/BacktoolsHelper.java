@@ -1,9 +1,9 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 import blusunrize.immersiveengineering.common.IEContent;
 import cpw.mods.fml.common.event.FMLInterModComms;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class BacktoolsHelper extends IECompatModule
 {

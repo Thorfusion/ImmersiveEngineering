@@ -1,13 +1,11 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import com.pahimar.ee3.init.Abilities;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 import blusunrize.immersiveengineering.common.Config;
 import blusunrize.immersiveengineering.common.IEContent;
-
 import com.pahimar.ee3.api.exchange.EnergyValueRegistryProxy;
 import com.pahimar.ee3.api.knowledge.AbilityRegistryProxy;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class EE3Helper extends IECompatModule
 {

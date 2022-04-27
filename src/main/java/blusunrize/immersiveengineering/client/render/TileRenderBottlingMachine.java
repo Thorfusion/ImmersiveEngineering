@@ -1,5 +1,12 @@
 package blusunrize.immersiveengineering.client.render;
 
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.client.models.ModelIEObj;
+import blusunrize.immersiveengineering.common.IEContent;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBottlingMachine;
+import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -11,16 +18,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.IItemRenderer.ItemRenderType;
 import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.client.model.obj.Vertex;
-
 import org.lwjgl.opengl.GL11;
-
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.client.models.ModelIEObj;
-import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices;
-import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBottlingMachine;
-import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
 
 public class TileRenderBottlingMachine extends TileRenderIE
 {

@@ -1,7 +1,5 @@
 package blusunrize.immersiveengineering.client.render;
 
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.client.ClientUtils;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.entity.RenderItem;
@@ -9,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.model.obj.WavefrontObject;
+import org.lwjgl.opengl.GL11;
 
 public class ItemRenderToolbox implements IItemRenderer
 {

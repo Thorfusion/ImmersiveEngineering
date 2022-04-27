@@ -1,16 +1,16 @@
 package blusunrize.immersiveengineering.common.util.compat.mfr;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
+import blusunrize.immersiveengineering.common.IEContent;
+import blusunrize.immersiveengineering.common.blocks.plant.BlockIECrop;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import powercrystals.minefactoryreloaded.api.HarvestType;
 import powercrystals.minefactoryreloaded.api.IFactoryHarvestable;
-import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.blocks.plant.BlockIECrop;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class IEHarvestable implements IFactoryHarvestable
 {

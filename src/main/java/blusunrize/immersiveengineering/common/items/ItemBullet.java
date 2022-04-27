@@ -1,10 +1,14 @@
 package blusunrize.immersiveengineering.common.items;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
+import blusunrize.immersiveengineering.api.tool.IBullet;
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.entities.EntityRevolvershot;
+import blusunrize.immersiveengineering.common.entities.EntityRevolvershotHoming;
+import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
+import com.google.common.collect.HashMultimap;
+import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -20,17 +24,11 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.StatCollector;
 import net.minecraft.util.Vec3;
-import blusunrize.immersiveengineering.api.tool.IBullet;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.entities.EntityRevolvershot;
-import blusunrize.immersiveengineering.common.entities.EntityRevolvershotHoming;
-import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
 
-import com.google.common.collect.HashMultimap;
-
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class ItemBullet extends ItemIEBase implements IBullet
 {

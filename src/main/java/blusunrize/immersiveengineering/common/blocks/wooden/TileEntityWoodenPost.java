@@ -1,10 +1,10 @@
 package blusunrize.immersiveengineering.common.blocks.wooden;
 
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.AxisAlignedBB;
 import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.AxisAlignedBB;
 
 public class TileEntityWoodenPost extends TileEntityIEBase
 {

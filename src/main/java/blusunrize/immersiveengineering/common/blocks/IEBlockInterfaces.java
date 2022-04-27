@@ -1,12 +1,12 @@
 package blusunrize.immersiveengineering.common.blocks;
 
-import java.util.ArrayList;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
+
+import java.util.ArrayList;
 
 public class IEBlockInterfaces
 {

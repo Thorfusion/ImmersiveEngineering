@@ -1,16 +1,6 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
-import org.lwjgl.opengl.GL11;
-
-import blusunrize.immersiveengineering.api.shader.ShaderCaseChemthrower;
-import blusunrize.immersiveengineering.api.shader.ShaderCaseDrill;
-import blusunrize.immersiveengineering.api.shader.ShaderCaseMinecart;
-import blusunrize.immersiveengineering.api.shader.ShaderCaseRailgun;
-import blusunrize.immersiveengineering.api.shader.ShaderCaseRevolver;
-import blusunrize.immersiveengineering.api.shader.ShaderRegistry;
+import blusunrize.immersiveengineering.api.shader.*;
 import blusunrize.immersiveengineering.api.tool.RailgunHandler;
 import blusunrize.immersiveengineering.client.ClientEventHandler;
 import blusunrize.immersiveengineering.client.ClientProxy;
@@ -21,6 +11,10 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import org.lwjgl.opengl.GL11;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 public class AvaritiaHelper extends IECompatModule
 {

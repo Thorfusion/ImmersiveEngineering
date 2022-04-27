@@ -1,8 +1,5 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Damage;
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Potion;
@@ -10,6 +7,9 @@ import blusunrize.immersiveengineering.api.tool.ExternalHeaterHandler;
 import net.minecraft.potion.Potion;
 import net.minecraft.tileentity.TileEntity;
 import thaumcraft.api.damagesource.DamageSourceThaumcraft;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 public class ThaumcraftHelper extends IECompatModule
 {

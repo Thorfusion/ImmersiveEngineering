@@ -1,11 +1,18 @@
 package blusunrize.immersiveengineering.common.items;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-
+import blusunrize.immersiveengineering.ImmersiveEngineering;
+import blusunrize.immersiveengineering.api.shader.IShaderEquipableItem;
+import blusunrize.immersiveengineering.api.tool.IBullet;
+import blusunrize.immersiveengineering.api.tool.ITool;
+import blusunrize.immersiveengineering.common.gui.IESlot;
+import blusunrize.immersiveengineering.common.util.IEAchievements;
+import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
+import blusunrize.immersiveengineering.common.util.Lib;
+import blusunrize.immersiveengineering.common.util.network.MessageSpeedloaderSync;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -25,21 +32,8 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import blusunrize.immersiveengineering.ImmersiveEngineering;
-import blusunrize.immersiveengineering.api.shader.IShaderEquipableItem;
-import blusunrize.immersiveengineering.api.tool.IBullet;
-import blusunrize.immersiveengineering.api.tool.ITool;
-import blusunrize.immersiveengineering.common.gui.IESlot;
-import blusunrize.immersiveengineering.common.util.IEAchievements;
-import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
-import blusunrize.immersiveengineering.common.util.Lib;
-import blusunrize.immersiveengineering.common.util.network.MessageSpeedloaderSync;
 
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import java.util.*;
 
 public class ItemRevolver extends ItemUpgradeableTool implements IShaderEquipableItem, ITool
 {

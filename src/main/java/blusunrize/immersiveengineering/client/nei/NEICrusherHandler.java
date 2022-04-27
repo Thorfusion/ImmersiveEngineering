@@ -1,16 +1,5 @@
 package blusunrize.immersiveengineering.client.nei;
 
-import static codechicken.lib.gui.GuiDraw.changeTexture;
-import static codechicken.lib.gui.GuiDraw.drawTexturedModalRect;
-import static codechicken.lib.gui.GuiDraw.getMousePosition;
-
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.util.Arrays;
-import java.util.List;
-
-import org.lwjgl.opengl.GL11;
-
 import blusunrize.immersiveengineering.api.crafting.CrusherRecipe;
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
@@ -22,6 +11,13 @@ import codechicken.nei.recipe.TemplateRecipeHandler;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
+import org.lwjgl.opengl.GL11;
+
+import java.awt.*;
+import java.util.Arrays;
+import java.util.List;
+
+import static codechicken.lib.gui.GuiDraw.*;
 
 public class NEICrusherHandler extends TemplateRecipeHandler
 {

@@ -1,9 +1,5 @@
 package blusunrize.immersiveengineering.common.world;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 import blusunrize.immersiveengineering.common.Config;
 import blusunrize.immersiveengineering.common.IEContent;
 import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDecoration;
@@ -26,6 +22,10 @@ import net.minecraft.world.gen.structure.StructureVillagePieces;
 import net.minecraft.world.gen.structure.StructureVillagePieces.PieceWeight;
 import net.minecraft.world.gen.structure.StructureVillagePieces.Start;
 import net.minecraftforge.common.ChestGenHooks;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class VillageEngineersHouse extends StructureVillagePieces.Village
 {

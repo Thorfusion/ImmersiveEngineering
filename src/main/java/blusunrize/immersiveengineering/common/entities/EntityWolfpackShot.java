@@ -1,11 +1,11 @@
 package blusunrize.immersiveengineering.common.entities;
 
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.util.IEDamageSources;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.util.IEDamageSources;
 
 public class EntityWolfpackShot extends EntityRevolvershotHoming
 {

@@ -1,12 +1,12 @@
 package blusunrize.immersiveengineering.api.shader;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class ShaderCaseMinecart extends ShaderCase
 {

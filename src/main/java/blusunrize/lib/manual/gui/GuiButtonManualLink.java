@@ -1,10 +1,10 @@
 package blusunrize.lib.manual.gui;
 
-import java.util.Arrays;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiButton;
+
+import java.util.Arrays;
 
 public class GuiButtonManualLink extends GuiButton
 {

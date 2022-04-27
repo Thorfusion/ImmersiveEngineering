@@ -1,8 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
+import blusunrize.immersiveengineering.api.energy.DieselHandler;
+import blusunrize.immersiveengineering.api.energy.DieselHandler.FermenterRecipe;
 import minetweaker.IUndoableAction;
 import minetweaker.MineTweakerAPI;
 import minetweaker.api.item.IIngredient;
@@ -13,8 +12,9 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
-import blusunrize.immersiveengineering.api.energy.DieselHandler;
-import blusunrize.immersiveengineering.api.energy.DieselHandler.FermenterRecipe;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 @ZenClass("mods.immersiveengineering.Fermenter")
 public class Fermenter

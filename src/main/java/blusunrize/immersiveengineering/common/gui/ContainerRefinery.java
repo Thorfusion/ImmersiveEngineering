@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.gui;
 
+import blusunrize.immersiveengineering.api.energy.DieselHandler;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRefinery;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -8,8 +10,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidContainerItem;
-import blusunrize.immersiveengineering.api.energy.DieselHandler;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRefinery;
 
 public class ContainerRefinery extends Container
 {

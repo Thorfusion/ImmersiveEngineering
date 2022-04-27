@@ -1,12 +1,5 @@
 package blusunrize.immersiveengineering.common.items;
 
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-
-import com.google.common.collect.ImmutableSet;
-import com.google.common.collect.Multimap;
-
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.api.energy.DieselHandler;
 import blusunrize.immersiveengineering.api.shader.IShaderEquipableItem;
@@ -17,6 +10,8 @@ import blusunrize.immersiveengineering.common.util.IEAchievements;
 import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
 import blusunrize.immersiveengineering.common.util.Lib;
 import blusunrize.immersiveengineering.common.util.network.MessageDrill;
+import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.Multimap;
 import cpw.mods.fml.common.network.NetworkRegistry.TargetPoint;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -39,6 +34,10 @@ import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidContainerItem;
+
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ItemDrill extends ItemUpgradeableTool implements IShaderEquipableItem, IFluidContainerItem, ITool
 {

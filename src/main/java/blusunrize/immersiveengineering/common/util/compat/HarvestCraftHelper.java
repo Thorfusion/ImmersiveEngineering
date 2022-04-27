@@ -1,8 +1,8 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import net.minecraftforge.fluids.FluidStack;
 import blusunrize.immersiveengineering.api.energy.DieselHandler;
 import blusunrize.immersiveengineering.common.IEContent;
+import net.minecraftforge.fluids.FluidStack;
 
 
 public class HarvestCraftHelper extends IECompatModule

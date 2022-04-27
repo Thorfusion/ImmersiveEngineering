@@ -1,19 +1,19 @@
 package blusunrize.immersiveengineering.common.util;
 
 
-import java.util.Set;
-
+import blusunrize.immersiveengineering.api.energy.IImmersiveConnectable;
+import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler;
+import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
+import blusunrize.immersiveengineering.common.entities.EntitySkylineHook;
+import blusunrize.immersiveengineering.common.items.ItemSkyhook;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
-import blusunrize.immersiveengineering.api.energy.IImmersiveConnectable;
-import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler;
-import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
-import blusunrize.immersiveengineering.common.entities.EntitySkylineHook;
-import blusunrize.immersiveengineering.common.items.ItemSkyhook;
+
+import java.util.Set;
 
 public class SkylineHelper
 {

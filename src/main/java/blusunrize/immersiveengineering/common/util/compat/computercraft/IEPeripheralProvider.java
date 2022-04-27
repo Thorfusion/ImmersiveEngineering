@@ -1,22 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.computercraft;
 
 import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityArcFurnace;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityAssembler;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBottlingMachine;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCapacitorCreative;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCapacitorHV;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCapacitorLV;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCapacitorMV;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityDieselGenerator;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityEnergyMeter;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityExcavator;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFermenter;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFloodlight;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRefinery;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntitySampleDrill;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntitySqueezer;
+import blusunrize.immersiveengineering.common.blocks.metal.*;
 import dan200.computercraft.api.peripheral.IPeripheral;
 import dan200.computercraft.api.peripheral.IPeripheralProvider;
 import net.minecraft.tileentity.TileEntity;

@@ -1,9 +1,5 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map.Entry;
-
 import blusunrize.immersiveengineering.api.ComparableItemStack;
 import blusunrize.immersiveengineering.api.crafting.MetalPressRecipe;
 import blusunrize.immersiveengineering.common.Config;
@@ -27,6 +23,10 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.oredict.OreDictionary;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class TileEntityMetalPress extends TileEntityMultiblockPart implements ISidedInventory, IEnergyReceiver
 {

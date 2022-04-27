@@ -1,12 +1,12 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
+import blusunrize.immersiveengineering.api.crafting.BottlingMachineRecipe;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
-import blusunrize.immersiveengineering.api.crafting.BottlingMachineRecipe;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ThermalDynamicsHelper extends IECompatModule
 {
