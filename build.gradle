@@ -32,6 +32,8 @@ apply plugin: "com.jfrog.artifactory"
 apply plugin: "maven-publish"
 apply plugin: "maven"
 
+import org.apache.tools.ant.filters.ReplaceTokens
+
 // Define properties file
 ext.configFile = file "build.properties"
 
@@ -65,17 +67,15 @@ targetCompatibility = 1.8
 
 minecraft {
     version = config.minecraft_version + "-" + config.forge_version
+    replaceIn "blusunrize/immersiveengineering/ImmersiveEngineering.java"
+    replace "GRADLE_MODVERSION", config.mod_version
 }
 
 dependencies {
 	compile fileTree(dir: 'externalLibs', include: '*.jar')
 }
 
-jar {
-    manifest {
-        attributes 'FMLAT': 'ImmersiveEngineering_at.cfg'
-    }
-}
+
 
 processResources
 {
@@ -84,11 +84,17 @@ processResources
 
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-                
         expand 'version':project.version, 'mcversion':project.minecraft.version
     }
+
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
+    }
+}
+
+jar {
+    manifest {
+        attributes 'FMLAT': 'ImmersiveEngineering_at.cfg'
     }
 }
 
