@@ -208,7 +208,6 @@ public class ClientProxy extends CommonProxy
 	public static IENixieFontRender nixieFont;
 	public static boolean isThorfusionLoaded;
 
-	@Override
 	public void preInit()
 	{
 		isThorfusionLoaded = Loader.isModLoaded("thorfusion");
