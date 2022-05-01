@@ -1,7 +1,7 @@
 [
 {
   "modid": "ImmersiveEngineering",
-  "name": "Immersive Engineering",
+  "name": "Immersive Engineering TF-E",
   "description": "Thorfusion Edition",
   "version": "${version}",
   "mcversion": "${mcversion}",
