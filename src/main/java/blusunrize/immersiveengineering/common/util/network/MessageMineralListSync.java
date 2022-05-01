@@ -1,16 +1,17 @@
 package blusunrize.immersiveengineering.common.util.network;
 
+import io.netty.buffer.ByteBuf;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import net.minecraft.nbt.NBTTagCompound;
 import blusunrize.immersiveengineering.api.tool.ExcavatorHandler;
 import blusunrize.immersiveengineering.api.tool.ExcavatorHandler.MineralMix;
 import cpw.mods.fml.common.network.ByteBufUtils;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
 import cpw.mods.fml.common.network.simpleimpl.MessageContext;
-import io.netty.buffer.ByteBuf;
-import net.minecraft.nbt.NBTTagCompound;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class MessageMineralListSync implements IMessage
 {

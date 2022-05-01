@@ -1,7 +1,13 @@
 package blusunrize.immersiveengineering.client.render;
 
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.blocks.wooden.*;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityModWorkbench;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWatermill;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWindmill;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWindmillAdvanced;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWoodenPost;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
@@ -9,7 +15,6 @@ import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.world.IBlockAccess;
-import org.lwjgl.opengl.GL11;
 
 public class BlockRenderWoodenDevices implements ISimpleBlockRenderingHandler
 {

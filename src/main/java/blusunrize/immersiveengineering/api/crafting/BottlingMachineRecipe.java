@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.api.crafting;
 
-import blusunrize.immersiveengineering.api.ApiUtils;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.oredict.OreDictionary;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.oredict.OreDictionary;
+import blusunrize.immersiveengineering.api.ApiUtils;
 
 /**
  * @author BluSunrize - 27.10.2015

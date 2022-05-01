@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.blocks.multiblocks;
 
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.api.MultiblockHandler.IMultiblock;
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.IEContent;
@@ -15,7 +17,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import org.lwjgl.opengl.GL11;
 
 public class MultiblockBlastFurnaceAdvanced implements IMultiblock
 {

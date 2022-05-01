@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
+import java.util.HashMap;
+
 import blusunrize.immersiveengineering.api.energy.DieselHandler;
 import blusunrize.immersiveengineering.api.energy.DieselHandler.FermenterRecipe;
 import blusunrize.immersiveengineering.common.Config;
@@ -16,10 +18,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
-import net.minecraftforge.fluids.*;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidTank;
+import net.minecraftforge.fluids.FluidTankInfo;
+import net.minecraftforge.fluids.IFluidHandler;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.util.HashMap;
 
 public class TileEntityFermenter extends TileEntityMultiblockPart implements IFluidHandler, ISidedInventory, IEnergyReceiver
 {

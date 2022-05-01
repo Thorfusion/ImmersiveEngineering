@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
+import java.util.List;
+
 import blusunrize.immersiveengineering.api.ApiUtils;
 import blusunrize.immersiveengineering.api.ComparableItemStack;
 import blusunrize.immersiveengineering.api.crafting.MetalPressRecipe;
@@ -11,8 +13,6 @@ import net.minecraft.item.ItemStack;
 import stanhebben.zenscript.annotations.Optional;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
-
-import java.util.List;
 
 @ZenClass("mods.immersiveengineering.MetalPress")
 public class MetalPress

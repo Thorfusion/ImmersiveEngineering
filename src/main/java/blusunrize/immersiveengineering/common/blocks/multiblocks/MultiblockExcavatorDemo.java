@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.common.blocks.multiblocks;
 
+import net.minecraft.block.Block;
+import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import blusunrize.immersiveengineering.api.MultiblockHandler.IMultiblock;
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.IEContent;
@@ -8,11 +13,6 @@ import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBucketWheel
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityExcavator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
 
 public class MultiblockExcavatorDemo implements IMultiblock
 {

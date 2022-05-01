@@ -1,5 +1,16 @@
 package blusunrize.lib.manual;
 
+import java.nio.FloatBuffer;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+import org.lwjgl.BufferUtils;
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.common.util.IELogger;
 import blusunrize.lib.manual.ManualPages.PositionedItemStack;
 import cpw.mods.fml.relauncher.ReflectionHelper;
@@ -14,11 +25,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
-import org.lwjgl.BufferUtils;
-import org.lwjgl.opengl.GL11;
-
-import java.nio.FloatBuffer;
-import java.util.*;
 
 public class ManualUtils
 {

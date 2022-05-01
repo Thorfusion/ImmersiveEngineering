@@ -1,7 +1,7 @@
 package blusunrize.immersiveengineering.common.blocks.wooden;
 
-import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 import net.minecraft.nbt.NBTTagCompound;
+import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 
 public class TileEntityWallmount extends TileEntityIEBase
 {

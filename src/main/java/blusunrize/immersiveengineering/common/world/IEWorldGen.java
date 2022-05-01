@@ -1,14 +1,14 @@
 package blusunrize.immersiveengineering.common.world;
 
-import cpw.mods.fml.common.IWorldGenerator;
+import java.util.ArrayList;
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-
-import java.util.ArrayList;
-import java.util.Random;
+import cpw.mods.fml.common.IWorldGenerator;
 
 public class IEWorldGen implements IWorldGenerator
 {

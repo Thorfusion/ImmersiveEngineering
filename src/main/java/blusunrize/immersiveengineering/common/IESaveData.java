@@ -1,5 +1,8 @@
 package blusunrize.immersiveengineering.common;
 
+import java.util.Map;
+import java.util.Map.Entry;
+
 import blusunrize.immersiveengineering.api.DimensionBlockPos;
 import blusunrize.immersiveengineering.api.DimensionChunkCoords;
 import blusunrize.immersiveengineering.api.energy.IICProxy;
@@ -13,10 +16,9 @@ import cpw.mods.fml.relauncher.Side;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldSavedData;
-
-import java.util.Map;
-import java.util.Map.Entry;
 
 public class IESaveData extends WorldSavedData
 {

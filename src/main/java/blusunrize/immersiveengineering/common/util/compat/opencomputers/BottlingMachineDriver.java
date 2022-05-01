@@ -1,5 +1,9 @@
 package blusunrize.immersiveengineering.common.util.compat.opencomputers;
 
+import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
+
+import java.util.Map;
+
 import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBottlingMachine;
 import blusunrize.immersiveengineering.common.util.Utils;
@@ -11,10 +15,6 @@ import li.cil.oc.api.network.Node;
 import li.cil.oc.api.prefab.DriverTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
-
-import java.util.Map;
-
-import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
 
 public class BottlingMachineDriver extends DriverTileEntity
 {

@@ -1,6 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
-import blusunrize.immersiveengineering.api.crafting.BottlingMachineRecipe;
+import java.util.List;
+
 import minetweaker.IUndoableAction;
 import minetweaker.MineTweakerAPI;
 import minetweaker.api.item.IIngredient;
@@ -9,8 +10,7 @@ import minetweaker.api.liquid.ILiquidStack;
 import net.minecraft.item.ItemStack;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
-
-import java.util.List;
+import blusunrize.immersiveengineering.api.crafting.BottlingMachineRecipe;
 
 @ZenClass("mods.immersiveengineering.BottlingMachine")
 public class BottlingMachine

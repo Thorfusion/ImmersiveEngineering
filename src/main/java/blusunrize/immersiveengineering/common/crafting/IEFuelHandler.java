@@ -1,9 +1,9 @@
 package blusunrize.immersiveengineering.common.crafting;
 
 import blusunrize.immersiveengineering.common.IEContent;
-import cpw.mods.fml.common.IFuelHandler;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
+import cpw.mods.fml.common.IFuelHandler;
 
 public class IEFuelHandler implements IFuelHandler
 {

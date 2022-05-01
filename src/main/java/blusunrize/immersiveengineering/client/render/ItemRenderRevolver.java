@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.client.render;
 
+import java.util.Arrays;
+import java.util.List;
+
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.api.shader.IShaderItem;
 import blusunrize.immersiveengineering.api.shader.ShaderCase;
 import blusunrize.immersiveengineering.client.ClientProxy;
@@ -13,10 +18,6 @@ import net.minecraft.util.IIcon;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.model.obj.GroupObject;
 import net.minecraftforge.client.model.obj.WavefrontObject;
-import org.lwjgl.opengl.GL11;
-
-import java.util.Arrays;
-import java.util.List;
 
 public class ItemRenderRevolver implements IItemRenderer
 {

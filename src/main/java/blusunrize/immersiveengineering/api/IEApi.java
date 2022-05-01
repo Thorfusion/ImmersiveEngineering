@@ -1,14 +1,14 @@
 package blusunrize.immersiveengineering.api;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.GameRegistry.UniqueIdentifier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * @author BluSunrize - 13.08.2015

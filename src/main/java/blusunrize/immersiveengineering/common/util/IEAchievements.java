@@ -1,12 +1,8 @@
 package blusunrize.immersiveengineering.common.util;
 
-import blusunrize.immersiveengineering.ImmersiveEngineering;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
-import blusunrize.immersiveengineering.common.items.ItemDrill;
-import blusunrize.immersiveengineering.common.items.ItemRevolver;
-import cpw.mods.fml.common.Loader;
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
@@ -16,9 +12,13 @@ import net.minecraft.stats.StatBase;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraftforge.common.AchievementPage;
-
-import java.util.ArrayList;
-import java.util.List;
+import blusunrize.immersiveengineering.ImmersiveEngineering;
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.IEContent;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
+import blusunrize.immersiveengineering.common.items.ItemDrill;
+import blusunrize.immersiveengineering.common.items.ItemRevolver;
+import cpw.mods.fml.common.Loader;
 
 public class IEAchievements
 {

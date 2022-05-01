@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Map;
+
 import blusunrize.immersiveengineering.api.shader.ShaderCaseMinecart;
 import blusunrize.immersiveengineering.api.tool.RailgunHandler;
 import blusunrize.immersiveengineering.client.models.ModelShaderMinecart;
@@ -18,11 +23,6 @@ import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Map;
 
 public class RailcraftHelper extends IECompatModule
 {

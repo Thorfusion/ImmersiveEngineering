@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.util.commands;
 
+import java.util.ArrayList;
+
 import blusunrize.immersiveengineering.api.shader.ShaderRegistry;
 import blusunrize.immersiveengineering.common.util.Lib;
 import blusunrize.immersiveengineering.common.util.commands.CommandHandler.IESubCommand;
@@ -7,8 +9,6 @@ import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ChatComponentTranslation;
-
-import java.util.ArrayList;
 
 public class CommandShaders extends IESubCommand
 {

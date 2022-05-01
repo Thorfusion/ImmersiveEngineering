@@ -1,7 +1,7 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWoodenBarrel;
 import net.minecraftforge.fluids.FluidStack;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWoodenBarrel;
 
 public class TileEntityMetalBarrel extends TileEntityWoodenBarrel
 {

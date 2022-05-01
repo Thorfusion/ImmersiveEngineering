@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.api.tool;
 
+import java.util.HashMap;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFurnace;
 import net.minecraft.init.Blocks;
@@ -8,8 +10,6 @@ import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityFurnace;
-
-import java.util.HashMap;
 
 public class ExternalHeaterHandler
 {

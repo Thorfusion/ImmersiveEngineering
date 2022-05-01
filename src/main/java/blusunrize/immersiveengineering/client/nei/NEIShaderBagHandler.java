@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.client.nei;
 
+import java.awt.Rectangle;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import blusunrize.immersiveengineering.api.shader.ShaderRegistry;
 import blusunrize.immersiveengineering.api.shader.ShaderRegistry.ShaderRegistryEntry;
 import blusunrize.immersiveengineering.common.IEContent;
@@ -9,11 +14,6 @@ import codechicken.nei.recipe.TemplateRecipeHandler;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
-
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class NEIShaderBagHandler extends TemplateRecipeHandler
 {

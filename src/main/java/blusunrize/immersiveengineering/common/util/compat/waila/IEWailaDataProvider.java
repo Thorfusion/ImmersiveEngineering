@@ -1,7 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.waila;
 
-import blusunrize.immersiveengineering.common.blocks.plant.BlockIECrop;
-import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWoodenBarrel;
+import java.util.List;
+
 import mcp.mobius.waila.api.IWailaConfigHandler;
 import mcp.mobius.waila.api.IWailaDataAccessor;
 import mcp.mobius.waila.api.IWailaDataProvider;
@@ -14,8 +14,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidStack;
-
-import java.util.List;
+import blusunrize.immersiveengineering.common.blocks.plant.BlockIECrop;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWoodenBarrel;
 
 public class IEWailaDataProvider implements IWailaDataProvider
 {

@@ -1,10 +1,7 @@
 package blusunrize.immersiveengineering.common.items;
 
-import blusunrize.immersiveengineering.api.tool.IDrillHead;
-import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
-import blusunrize.immersiveengineering.common.util.Lib;
-import blusunrize.immersiveengineering.common.util.Utils;
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -16,8 +13,11 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.util.List;
+import blusunrize.immersiveengineering.api.tool.IDrillHead;
+import blusunrize.immersiveengineering.common.IEContent;
+import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
+import blusunrize.immersiveengineering.common.util.Lib;
+import blusunrize.immersiveengineering.common.util.Utils;
 
 public class ItemDrillhead extends ItemIEBase implements IDrillHead
 {

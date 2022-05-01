@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
+import java.util.List;
+
 import blusunrize.immersiveengineering.api.crafting.CokeOvenRecipe;
 import minetweaker.IUndoableAction;
 import minetweaker.MineTweakerAPI;
@@ -8,8 +10,6 @@ import minetweaker.api.item.IItemStack;
 import net.minecraft.item.ItemStack;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
-
-import java.util.List;
 
 @ZenClass("mods.immersiveengineering.CokeOven")
 public class CokeOven

@@ -1,5 +1,8 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
+import static minetweaker.api.minecraft.MineTweakerMC.getItemStack;
+import static minetweaker.api.minecraft.MineTweakerMC.getLiquidStack;
+
 import blusunrize.immersiveengineering.api.ManualHelper;
 import blusunrize.immersiveengineering.api.tool.ExcavatorHandler;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
@@ -18,9 +21,6 @@ import minetweaker.api.oredict.IOreDictEntry;
 import minetweaker.util.IEventHandler;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
-
-import static minetweaker.api.minecraft.MineTweakerMC.getItemStack;
-import static minetweaker.api.minecraft.MineTweakerMC.getLiquidStack;
 
 public class MTHelper extends IECompatModule
 {

@@ -1,8 +1,19 @@
 package blusunrize.immersiveengineering.client.render;
 
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.blocks.metal.*;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices2;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBlastFurnacePreheater;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBreakerSwitch;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityChargingStation;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityElectricLantern;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityEnergyMeter;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFloodlight;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFluidPipe;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFluidPump;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRedstoneBreaker;
 import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -13,7 +24,6 @@ import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
-import org.lwjgl.opengl.GL11;
 
 public class BlockRenderMetalDevices2 implements ISimpleBlockRenderingHandler
 {

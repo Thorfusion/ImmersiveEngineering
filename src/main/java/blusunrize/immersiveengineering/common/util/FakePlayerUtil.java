@@ -1,11 +1,12 @@
 package blusunrize.immersiveengineering.common.util;
 
-import com.mojang.authlib.GameProfile;
+import java.util.UUID;
+
 import net.minecraft.world.WorldServer;
 import net.minecraftforge.common.util.FakePlayer;
 import net.minecraftforge.common.util.FakePlayerFactory;
 
-import java.util.UUID;
+import com.mojang.authlib.GameProfile;
 
 public class FakePlayerUtil
 {

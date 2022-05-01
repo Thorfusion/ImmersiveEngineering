@@ -1,5 +1,9 @@
 package blusunrize.immersiveengineering.client.nei;
 
+import java.awt.Rectangle;
+import java.util.Arrays;
+import java.util.List;
+
 import blusunrize.immersiveengineering.api.IEApi;
 import blusunrize.immersiveengineering.common.IEContent;
 import blusunrize.immersiveengineering.common.IERecipes;
@@ -10,10 +14,6 @@ import codechicken.nei.recipe.TemplateRecipeHandler;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.awt.*;
-import java.util.Arrays;
-import java.util.List;
 
 public class NEIHammerCrushingHandler extends TemplateRecipeHandler
 {

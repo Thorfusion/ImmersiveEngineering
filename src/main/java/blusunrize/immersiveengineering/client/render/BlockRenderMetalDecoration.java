@@ -1,9 +1,5 @@
 package blusunrize.immersiveengineering.client.render;
 
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.blocks.metal.*;
-import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
-import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
@@ -12,7 +8,17 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.util.ForgeDirection;
+
 import org.lwjgl.opengl.GL11;
+
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDecoration;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConnectorStructural;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityLantern;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityStructuralArm;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityWallmountMetal;
+import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class BlockRenderMetalDecoration implements ISimpleBlockRenderingHandler
 {

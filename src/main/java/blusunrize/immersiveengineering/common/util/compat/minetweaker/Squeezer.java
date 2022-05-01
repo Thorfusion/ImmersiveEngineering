@@ -1,7 +1,8 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
-import blusunrize.immersiveengineering.api.energy.DieselHandler;
-import blusunrize.immersiveengineering.api.energy.DieselHandler.SqueezerRecipe;
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import minetweaker.IUndoableAction;
 import minetweaker.MineTweakerAPI;
 import minetweaker.api.item.IIngredient;
@@ -12,9 +13,8 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
-
-import java.util.ArrayList;
-import java.util.Iterator;
+import blusunrize.immersiveengineering.api.energy.DieselHandler;
+import blusunrize.immersiveengineering.api.energy.DieselHandler.SqueezerRecipe;
 
 @ZenClass("mods.immersiveengineering.Squeezer")
 public class Squeezer

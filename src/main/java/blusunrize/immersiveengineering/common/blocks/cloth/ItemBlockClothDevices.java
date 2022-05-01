@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.blocks.cloth;
 
+import java.util.List;
+
 import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
 import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
 import net.minecraft.block.Block;
@@ -7,8 +9,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
-
-import java.util.List;
 
 public class ItemBlockClothDevices extends ItemBlockIEBase
 {

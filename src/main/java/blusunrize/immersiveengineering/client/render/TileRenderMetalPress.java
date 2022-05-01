@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.client.render;
 
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.client.models.ModelIEObj;
 import blusunrize.immersiveengineering.common.IEContent;
@@ -14,7 +16,6 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
-import org.lwjgl.opengl.GL11;
 
 public class TileRenderMetalPress extends TileRenderIE
 {

@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.common.crafting;
 
-import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
-import blusunrize.immersiveengineering.common.util.Utils;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemPotion;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
+import blusunrize.immersiveengineering.common.IEContent;
+import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
+import blusunrize.immersiveengineering.common.util.Utils;
 
 public class RecipePotionBullets implements IRecipe
 {

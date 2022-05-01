@@ -1,16 +1,20 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
-import blusunrize.immersiveengineering.api.tool.ExcavatorHandler;
-import blusunrize.immersiveengineering.api.tool.ExcavatorHandler.MineralMix;
-import minetweaker.IUndoableAction;
-import minetweaker.MineTweakerAPI;
-import stanhebben.zenscript.annotations.*;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import minetweaker.IUndoableAction;
+import minetweaker.MineTweakerAPI;
+import stanhebben.zenscript.annotations.Optional;
+import stanhebben.zenscript.annotations.ZenClass;
+import stanhebben.zenscript.annotations.ZenGetter;
+import stanhebben.zenscript.annotations.ZenMethod;
+import stanhebben.zenscript.annotations.ZenSetter;
+import blusunrize.immersiveengineering.api.tool.ExcavatorHandler;
+import blusunrize.immersiveengineering.api.tool.ExcavatorHandler.MineralMix;
 
 @ZenClass("mods.immersiveengineering.Excavator")
 public class Excavator

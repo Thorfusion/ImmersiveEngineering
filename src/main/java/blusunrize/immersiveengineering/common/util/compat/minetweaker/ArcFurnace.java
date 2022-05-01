@@ -1,6 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.minetweaker;
 
-import blusunrize.immersiveengineering.api.crafting.ArcFurnaceRecipe;
+import java.util.List;
+
 import minetweaker.IUndoableAction;
 import minetweaker.MineTweakerAPI;
 import minetweaker.api.item.IIngredient;
@@ -9,8 +10,7 @@ import net.minecraft.item.ItemStack;
 import stanhebben.zenscript.annotations.Optional;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
-
-import java.util.List;
+import blusunrize.immersiveengineering.api.crafting.ArcFurnaceRecipe;
 
 @ZenClass("mods.immersiveengineering.ArcFurnace")
 public class ArcFurnace

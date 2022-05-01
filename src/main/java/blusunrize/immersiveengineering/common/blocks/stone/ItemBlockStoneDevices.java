@@ -1,14 +1,14 @@
 package blusunrize.immersiveengineering.common.blocks.stone;
 
-import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
+import java.util.List;
+
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
-import java.util.List;
+import blusunrize.immersiveengineering.common.IEContent;
+import blusunrize.immersiveengineering.common.blocks.ItemBlockIEBase;
 
 public class ItemBlockStoneDevices extends ItemBlockIEBase
 {

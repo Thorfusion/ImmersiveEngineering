@@ -1,16 +1,16 @@
 package blusunrize.immersiveengineering.common.util;
 
-import blusunrize.immersiveengineering.api.IEApi;
-import blusunrize.immersiveengineering.common.Config;
+import java.lang.reflect.Field;
+import java.util.UUID;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.ResourceLocation;
-
-import java.lang.reflect.Field;
-import java.util.UUID;
+import blusunrize.immersiveengineering.api.IEApi;
+import blusunrize.immersiveengineering.common.Config;
 
 public class IEPotions
 {

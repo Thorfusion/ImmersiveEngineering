@@ -1,20 +1,26 @@
 package blusunrize.lib.manual.gui;
 
-import blusunrize.lib.manual.IManualPage;
-import blusunrize.lib.manual.ManualInstance;
-import blusunrize.lib.manual.ManualInstance.ManualEntry;
-import blusunrize.lib.manual.ManualUtils;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.*;
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiTextField;
+import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
+
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import blusunrize.lib.manual.IManualPage;
+import blusunrize.lib.manual.ManualInstance;
+import blusunrize.lib.manual.ManualInstance.ManualEntry;
+import blusunrize.lib.manual.ManualUtils;
 
 public class GuiManual extends GuiScreen
 {

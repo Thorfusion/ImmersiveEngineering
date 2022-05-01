@@ -1,14 +1,14 @@
 package blusunrize.immersiveengineering.common.crafting;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+import net.minecraft.item.ItemStack;
 import blusunrize.immersiveengineering.api.ApiUtils;
 import blusunrize.immersiveengineering.api.IEApi;
 import blusunrize.immersiveengineering.api.crafting.ArcFurnaceRecipe;
 import blusunrize.immersiveengineering.common.util.Utils;
-import net.minecraft.item.ItemStack;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map.Entry;
 
 public class ArcRecyclingRecipe extends ArcFurnaceRecipe
 {

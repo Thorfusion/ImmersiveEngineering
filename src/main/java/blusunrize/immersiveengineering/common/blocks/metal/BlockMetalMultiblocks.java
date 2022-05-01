@@ -1,5 +1,8 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.api.crafting.MetalPressRecipe;
 import blusunrize.immersiveengineering.client.render.BlockRenderMetalMultiblocks;
@@ -22,14 +25,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.*;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.IIcon;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.IFluidContainerItem;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class BlockMetalMultiblocks extends BlockIEBase implements ICustomBoundingboxes
 {

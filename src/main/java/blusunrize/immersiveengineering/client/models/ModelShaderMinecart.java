@@ -1,5 +1,11 @@
 package blusunrize.immersiveengineering.client.models;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.api.shader.IShaderItem;
 import blusunrize.immersiveengineering.api.shader.ShaderCase;
 import blusunrize.immersiveengineering.api.shader.ShaderCaseMinecart;
@@ -13,11 +19,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
-import org.lwjgl.opengl.GL11;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public class ModelShaderMinecart extends ModelMinecart
 {

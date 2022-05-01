@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.opencomputers;
 
+import java.util.HashMap;
+
 import blusunrize.immersiveengineering.api.energy.DieselHandler.RefineryRecipe;
 import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRefinery;
@@ -14,8 +16,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
-
-import java.util.HashMap;
 
 public class RefineryDriver extends DriverTileEntity
 {

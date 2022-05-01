@@ -1,5 +1,11 @@
 package blusunrize.immersiveengineering.common;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
+import com.google.common.collect.ArrayListMultimap;
+
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.api.ApiUtils;
 import blusunrize.immersiveengineering.api.IEApi;
@@ -7,11 +13,18 @@ import blusunrize.immersiveengineering.api.crafting.ArcFurnaceRecipe;
 import blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe;
 import blusunrize.immersiveengineering.api.crafting.CrusherRecipe;
 import blusunrize.immersiveengineering.api.crafting.MetalPressRecipe;
-import blusunrize.immersiveengineering.common.blocks.metal.*;
-import blusunrize.immersiveengineering.common.crafting.*;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDecoration;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDecoration2;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices2;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
+import blusunrize.immersiveengineering.common.crafting.RecipeJerrycan;
+import blusunrize.immersiveengineering.common.crafting.RecipePotionBullets;
+import blusunrize.immersiveengineering.common.crafting.RecipeRevolver;
+import blusunrize.immersiveengineering.common.crafting.RecipeShaderBags;
+import blusunrize.immersiveengineering.common.crafting.RecipeShapedArrayList;
 import blusunrize.immersiveengineering.common.util.Utils;
 import blusunrize.immersiveengineering.common.util.compat.NetherOresHelper;
-import com.google.common.collect.ArrayListMultimap;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -26,10 +39,6 @@ import net.minecraftforge.oredict.RecipeSorter;
 import net.minecraftforge.oredict.RecipeSorter.Category;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 
 public class IERecipes
 {

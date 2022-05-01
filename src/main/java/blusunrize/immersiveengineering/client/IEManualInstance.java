@@ -1,10 +1,7 @@
 package blusunrize.immersiveengineering.client;
 
-import blusunrize.immersiveengineering.api.ManualHelper;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.util.Utils;
-import blusunrize.lib.manual.IManualPage;
-import blusunrize.lib.manual.ManualInstance;
+import java.util.LinkedHashSet;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.resources.IReloadableResourceManager;
@@ -12,8 +9,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.DimensionManager;
-
-import java.util.LinkedHashSet;
+import blusunrize.immersiveengineering.api.ManualHelper;
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.util.Utils;
+import blusunrize.lib.manual.IManualPage;
+import blusunrize.lib.manual.ManualInstance;
 
 public class IEManualInstance extends ManualInstance
 {

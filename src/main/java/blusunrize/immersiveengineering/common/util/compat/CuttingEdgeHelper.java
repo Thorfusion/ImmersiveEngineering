@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Potion;
 import blusunrize.immersiveengineering.api.tool.ExternalHeaterHandler;
 import blusunrize.immersiveengineering.common.util.IEPotions;
 import net.minecraft.tileentity.TileEntity;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 
 public class CuttingEdgeHelper extends IECompatModule
 {

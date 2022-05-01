@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.items;
 
+import java.util.List;
+
 import blusunrize.immersiveengineering.api.shader.ShaderRegistry;
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.IEContent;
@@ -13,8 +15,6 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
-import java.util.List;
 
 public class ItemShaderBag extends ItemIEBase
 {

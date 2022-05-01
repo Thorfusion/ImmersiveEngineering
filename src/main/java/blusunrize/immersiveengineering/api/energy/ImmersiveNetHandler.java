@@ -1,22 +1,31 @@
 package blusunrize.immersiveengineering.api.energy;
 
+import static blusunrize.immersiveengineering.api.ApiUtils.addVectors;
+import static blusunrize.immersiveengineering.api.ApiUtils.getConnectionCatenary;
+import static blusunrize.immersiveengineering.api.ApiUtils.toCC;
+import static blusunrize.immersiveengineering.api.ApiUtils.toIIC;
+import static java.util.Collections.newSetFromMap;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.Vec3;
+import net.minecraft.world.World;
 import blusunrize.immersiveengineering.api.ApiUtils;
 import blusunrize.immersiveengineering.api.DimensionBlockPos;
 import blusunrize.immersiveengineering.api.TargetingInfo;
 import blusunrize.immersiveengineering.common.IESaveData;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.ChunkCoordinates;
-import net.minecraft.util.Vec3;
-import net.minecraft.world.World;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-import static blusunrize.immersiveengineering.api.ApiUtils.*;
-import static java.util.Collections.newSetFromMap;
 
 public class ImmersiveNetHandler
 {

@@ -1,5 +1,17 @@
 package blusunrize.immersiveengineering.common;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
+
 import WayofTime.alchemicalWizardry.api.event.TeleposeEvent;
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.api.DimensionBlockPos;
@@ -20,7 +32,12 @@ import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityMultiblockPart;
 import blusunrize.immersiveengineering.common.entities.EntityPropertiesShaderCart;
 import blusunrize.immersiveengineering.common.items.ItemDrill;
-import blusunrize.immersiveengineering.common.util.*;
+import blusunrize.immersiveengineering.common.util.IEAchievements;
+import blusunrize.immersiveengineering.common.util.IELogger;
+import blusunrize.immersiveengineering.common.util.IEPotions;
+import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
+import blusunrize.immersiveengineering.common.util.Lib;
+import blusunrize.immersiveengineering.common.util.Utils;
 import blusunrize.immersiveengineering.common.util.compat.computercraft.TileEntityRequest;
 import blusunrize.immersiveengineering.common.util.network.MessageDrill;
 import blusunrize.immersiveengineering.common.util.network.MessageMinecartShaderSync;
@@ -69,10 +86,6 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.util.*;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class EventHandler
 {

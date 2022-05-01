@@ -1,12 +1,14 @@
 package blusunrize.immersiveengineering.client.render;
 
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.Config;
-import blusunrize.immersiveengineering.common.blocks.metal.TileEntitySampleDrill;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.client.model.obj.WavefrontObject;
+
 import org.lwjgl.opengl.GL11;
+
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.common.Config;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntitySampleDrill;
 
 public class TileRenderSampleDrill extends TileEntitySpecialRenderer
 {

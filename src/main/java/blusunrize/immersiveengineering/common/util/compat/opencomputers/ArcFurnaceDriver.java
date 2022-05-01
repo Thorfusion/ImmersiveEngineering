@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.opencomputers;
 
+import java.util.Map;
+
 import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityArcFurnace;
 import blusunrize.immersiveengineering.common.items.ItemGraphiteElectrode;
@@ -14,8 +16,6 @@ import li.cil.oc.api.prefab.DriverTileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
-
-import java.util.Map;
 
 public class ArcFurnaceDriver extends DriverTileEntity
 {

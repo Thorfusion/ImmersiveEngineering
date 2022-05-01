@@ -1,5 +1,7 @@
 package blusunrize.immersiveengineering.common.blocks.cloth;
 
+import java.util.List;
+
 import blusunrize.immersiveengineering.api.shader.IShaderItem;
 import blusunrize.immersiveengineering.client.render.BlockRenderClothDevices;
 import blusunrize.immersiveengineering.common.blocks.BlockIEBase;
@@ -18,8 +20,6 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-
-import java.util.List;
 
 @Optional.Interface(iface = "blusunrize.aquatweaks.api.IAquaConnectable", modid = "AquaTweaks")
 public class BlockClothDevices extends BlockIEBase implements blusunrize.aquatweaks.api.IAquaConnectable

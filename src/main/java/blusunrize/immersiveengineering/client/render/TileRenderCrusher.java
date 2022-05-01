@@ -1,16 +1,18 @@
 package blusunrize.immersiveengineering.client.render;
 
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.IIcon;
+import net.minecraftforge.client.model.obj.Vertex;
+
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.client.models.ModelIEObj;
 import blusunrize.immersiveengineering.common.IEContent;
 import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
 import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.IIcon;
-import net.minecraftforge.client.model.obj.Vertex;
-import org.lwjgl.opengl.GL11;
 
 public class TileRenderCrusher extends TileRenderIE
 {

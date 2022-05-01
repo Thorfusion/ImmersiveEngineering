@@ -1,6 +1,5 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
 import ic2.api.energy.EnergyNet;
 import ic2.api.energy.event.EnergyTileLoadEvent;
 import ic2.api.energy.event.EnergyTileUnloadEvent;
@@ -12,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.ForgeDirection;
+import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
 
 public class IC2Helper extends IECompatModule
 {

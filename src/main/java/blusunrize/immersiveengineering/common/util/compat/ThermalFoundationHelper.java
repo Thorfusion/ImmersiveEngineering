@@ -1,12 +1,5 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
-import blusunrize.immersiveengineering.api.crafting.CrusherRecipe;
-import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
-import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Damage;
-import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Potion;
-import blusunrize.immersiveengineering.common.IERecipes;
-import blusunrize.immersiveengineering.common.util.IEPotions;
-import cofh.lib.util.helpers.DamageHelper;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -16,6 +9,13 @@ import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.fluids.Fluid;
+import blusunrize.immersiveengineering.api.crafting.CrusherRecipe;
+import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
+import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Damage;
+import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Potion;
+import blusunrize.immersiveengineering.common.IERecipes;
+import blusunrize.immersiveengineering.common.util.IEPotions;
+import cofh.lib.util.helpers.DamageHelper;
 
 public class ThermalFoundationHelper extends IECompatModule
 {

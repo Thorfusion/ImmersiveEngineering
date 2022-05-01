@@ -1,5 +1,9 @@
 package blusunrize.immersiveengineering.api.tool;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFire;
 import net.minecraft.entity.EntityLivingBase;
@@ -14,10 +18,6 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 
 public class ChemthrowerHandler
 {

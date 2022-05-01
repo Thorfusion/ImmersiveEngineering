@@ -8,10 +8,9 @@
 
 package mods.railcraft.api.crafting;
 
-import net.minecraft.item.ItemStack;
-
 import java.util.List;
 import java.util.Map;
+import net.minecraft.item.ItemStack;
 
 /**
  *

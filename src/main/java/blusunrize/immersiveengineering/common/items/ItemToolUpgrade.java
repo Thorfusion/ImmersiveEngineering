@@ -1,17 +1,18 @@
 package blusunrize.immersiveengineering.common.items;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.StatCollector;
 import blusunrize.immersiveengineering.ImmersiveEngineering;
 import blusunrize.immersiveengineering.api.tool.IUpgrade;
 import blusunrize.immersiveengineering.api.tool.IUpgradeableTool;
 import blusunrize.immersiveengineering.common.util.Lib;
-import com.google.common.collect.ImmutableSet;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.StatCollector;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import com.google.common.collect.ImmutableSet;
 
 public class ItemToolUpgrade extends ItemIEBase implements IUpgrade {
 

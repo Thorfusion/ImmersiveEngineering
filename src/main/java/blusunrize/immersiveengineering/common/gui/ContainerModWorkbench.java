@@ -1,14 +1,14 @@
 package blusunrize.immersiveengineering.common.gui;
 
-import blusunrize.immersiveengineering.api.tool.IUpgradeableTool;
-import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityModWorkbench;
-import blusunrize.immersiveengineering.common.items.ItemEngineersBlueprint;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import blusunrize.immersiveengineering.api.tool.IUpgradeableTool;
+import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityModWorkbench;
+import blusunrize.immersiveengineering.common.items.ItemEngineersBlueprint;
 
 public class ContainerModWorkbench extends Container
 {

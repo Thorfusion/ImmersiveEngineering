@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.common.items;
 
+import java.util.HashMap;
+import java.util.List;
+
+import com.google.common.collect.Multimap;
+
 import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
 import blusunrize.immersiveengineering.api.tool.ITool;
 import blusunrize.immersiveengineering.common.entities.EntitySkylineHook;
@@ -7,7 +12,6 @@ import blusunrize.immersiveengineering.common.gui.IESlot;
 import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
 import blusunrize.immersiveengineering.common.util.Lib;
 import blusunrize.immersiveengineering.common.util.SkylineHelper;
-import com.google.common.collect.Multimap;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -19,9 +23,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-
-import java.util.HashMap;
-import java.util.List;
 
 public class ItemSkyhook extends ItemUpgradeableTool implements ITool
 {

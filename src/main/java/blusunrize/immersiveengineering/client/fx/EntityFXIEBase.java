@@ -1,10 +1,11 @@
 package blusunrize.immersiveengineering.client.fx;
 
-import com.google.common.collect.ArrayListMultimap;
 import net.minecraft.client.particle.EntityFX;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+
+import com.google.common.collect.ArrayListMultimap;
 
 public abstract class EntityFXIEBase extends EntityFX
 {

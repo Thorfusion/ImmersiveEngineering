@@ -1,13 +1,13 @@
 package blusunrize.immersiveengineering.client.models;
 
-import blusunrize.immersiveengineering.client.ClientUtils;
-import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
+import java.util.ArrayList;
+
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.client.model.obj.WavefrontObject;
-
-import java.util.ArrayList;
+import blusunrize.immersiveengineering.client.ClientUtils;
+import blusunrize.immersiveengineering.common.util.chickenbones.Matrix4;
 
 public abstract class ModelIEObj
 {

@@ -1,5 +1,9 @@
 package blusunrize.immersiveengineering.common.util.compat.computercraft;
 
+import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
+
+import java.util.Map;
+
 import blusunrize.immersiveengineering.common.blocks.metal.TileEntityArcFurnace;
 import blusunrize.immersiveengineering.common.items.ItemGraphiteElectrode;
 import blusunrize.immersiveengineering.common.util.ItemNBTHelper;
@@ -8,10 +12,6 @@ import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
-import java.util.Map;
-
-import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
 
 public class PeripheralArcFurnace extends IEPeripheral
 {

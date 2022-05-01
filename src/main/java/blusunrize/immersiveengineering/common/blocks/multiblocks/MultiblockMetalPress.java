@@ -1,9 +1,15 @@
 package blusunrize.immersiveengineering.common.blocks.multiblocks;
 
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.api.MultiblockHandler.IMultiblock;
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.common.IEContent;
-import blusunrize.immersiveengineering.common.blocks.metal.*;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDecoration;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalDevices;
+import blusunrize.immersiveengineering.common.blocks.metal.BlockMetalMultiblocks;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConveyorBelt;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityMetalPress;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -14,7 +20,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
-import org.lwjgl.opengl.GL11;
 
 public class MultiblockMetalPress implements IMultiblock
 {

@@ -1,4 +1,7 @@
 package blusunrize.immersiveengineering.common.util.compat.computercraft;
+import static blusunrize.immersiveengineering.common.util.Utils.saveFluidStack;
+import static blusunrize.immersiveengineering.common.util.Utils.saveFluidTank;
+import static blusunrize.immersiveengineering.common.util.Utils.saveStack;
 
 import blusunrize.immersiveengineering.api.energy.DieselHandler;
 import blusunrize.immersiveengineering.api.energy.DieselHandler.SqueezerRecipe;
@@ -7,8 +10,6 @@ import dan200.computercraft.api.lua.ILuaContext;
 import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import net.minecraft.world.World;
-
-import static blusunrize.immersiveengineering.common.util.Utils.*;
 
 public class PeripheralSqueezer extends IEPeripheral
 {

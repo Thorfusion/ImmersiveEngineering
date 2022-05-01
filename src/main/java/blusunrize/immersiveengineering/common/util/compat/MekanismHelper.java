@@ -1,11 +1,11 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
+import net.minecraft.potion.Potion;
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler;
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Damage;
 import blusunrize.immersiveengineering.api.tool.ChemthrowerHandler.ChemthrowerEffect_Potion;
 import blusunrize.immersiveengineering.common.IERecipes;
 import blusunrize.immersiveengineering.common.util.IEDamageSources;
-import net.minecraft.potion.Potion;
 
 public class MekanismHelper extends IECompatModule
 {

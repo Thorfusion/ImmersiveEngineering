@@ -1,11 +1,11 @@
 package blusunrize.immersiveengineering.common.util.chickenbones;
 
-import net.minecraft.util.Vec3;
-import net.minecraftforge.client.model.obj.Vertex;
-
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
+
+import net.minecraft.util.Vec3;
+import net.minecraftforge.client.model.obj.Vertex;
 
 /**
  * Copyright (C) 2013 Chicken-Bones

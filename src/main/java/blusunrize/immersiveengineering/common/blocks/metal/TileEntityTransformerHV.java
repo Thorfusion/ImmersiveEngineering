@@ -1,8 +1,8 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
-import blusunrize.immersiveengineering.api.energy.WireType;
 import net.minecraft.util.Vec3;
+import blusunrize.immersiveengineering.api.energy.WireType;
+import blusunrize.immersiveengineering.api.energy.ImmersiveNetHandler.Connection;
 
 public class TileEntityTransformerHV extends TileEntityTransformer
 {

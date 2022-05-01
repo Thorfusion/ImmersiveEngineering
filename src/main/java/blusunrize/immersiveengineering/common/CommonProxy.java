@@ -1,23 +1,42 @@
 package blusunrize.immersiveengineering.common;
 
-import blusunrize.immersiveengineering.common.blocks.metal.*;
+import java.util.UUID;
+
+import com.mojang.authlib.GameProfile;
+
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityArcFurnace;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityAssembler;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityBucketWheel;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityConveyorSorter;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityCrusher;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityFermenter;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntityRefinery;
+import blusunrize.immersiveengineering.common.blocks.metal.TileEntitySqueezer;
 import blusunrize.immersiveengineering.common.blocks.stone.TileEntityBlastFurnace;
 import blusunrize.immersiveengineering.common.blocks.stone.TileEntityCokeOven;
 import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityModWorkbench;
 import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWoodenCrate;
-import blusunrize.immersiveengineering.common.gui.*;
+import blusunrize.immersiveengineering.common.gui.ContainerArcFurnace;
+import blusunrize.immersiveengineering.common.gui.ContainerAssembler;
+import blusunrize.immersiveengineering.common.gui.ContainerBlastFurnace;
+import blusunrize.immersiveengineering.common.gui.ContainerCokeOven;
+import blusunrize.immersiveengineering.common.gui.ContainerCrate;
+import blusunrize.immersiveengineering.common.gui.ContainerFermenter;
+import blusunrize.immersiveengineering.common.gui.ContainerModWorkbench;
+import blusunrize.immersiveengineering.common.gui.ContainerRefinery;
+import blusunrize.immersiveengineering.common.gui.ContainerRevolver;
+import blusunrize.immersiveengineering.common.gui.ContainerSorter;
+import blusunrize.immersiveengineering.common.gui.ContainerSqueezer;
+import blusunrize.immersiveengineering.common.gui.ContainerToolbox;
 import blusunrize.immersiveengineering.common.items.ItemRevolver;
 import blusunrize.immersiveengineering.common.items.ItemToolbox;
 import blusunrize.immersiveengineering.common.util.Lib;
-import com.mojang.authlib.GameProfile;
 import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
-
-import java.util.UUID;
 
 public class CommonProxy implements IGuiHandler
 {

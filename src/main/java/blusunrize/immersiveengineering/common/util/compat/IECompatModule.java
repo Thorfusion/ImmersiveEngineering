@@ -1,5 +1,10 @@
 package blusunrize.immersiveengineering.common.util.compat;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map.Entry;
+import java.util.Set;
+
 import blusunrize.immersiveengineering.common.Config;
 import blusunrize.immersiveengineering.common.util.IELogger;
 import blusunrize.immersiveengineering.common.util.compat.computercraft.ComputercraftHelper;
@@ -9,11 +14,6 @@ import blusunrize.immersiveengineering.common.util.compat.minetweaker.MTHelper;
 import blusunrize.immersiveengineering.common.util.compat.opencomputers.OCHelper;
 import blusunrize.immersiveengineering.common.util.compat.waila.WailaHelper;
 import cpw.mods.fml.common.Loader;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map.Entry;
-import java.util.Set;
 
 public abstract class IECompatModule
 {

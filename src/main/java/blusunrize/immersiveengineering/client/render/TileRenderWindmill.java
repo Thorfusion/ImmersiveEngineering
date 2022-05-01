@@ -1,11 +1,13 @@
 package blusunrize.immersiveengineering.client.render;
 
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+
+import org.lwjgl.opengl.GL11;
+
 import blusunrize.immersiveengineering.client.ClientUtils;
 import blusunrize.immersiveengineering.client.models.ModelWindmill;
 import blusunrize.immersiveengineering.common.blocks.wooden.TileEntityWindmill;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.tileentity.TileEntity;
-import org.lwjgl.opengl.GL11;
 
 public class TileRenderWindmill extends TileEntitySpecialRenderer
 {

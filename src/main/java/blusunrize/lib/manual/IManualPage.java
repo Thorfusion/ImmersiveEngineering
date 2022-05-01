@@ -1,9 +1,9 @@
 package blusunrize.lib.manual;
 
-import blusunrize.lib.manual.gui.GuiManual;
-import net.minecraft.client.gui.GuiButton;
-
 import java.util.List;
+
+import net.minecraft.client.gui.GuiButton;
+import blusunrize.lib.manual.gui.GuiManual;
 
 public interface IManualPage
 {

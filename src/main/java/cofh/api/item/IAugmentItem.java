@@ -1,8 +1,8 @@
 package cofh.api.item;
 
-import net.minecraft.item.ItemStack;
-
 import java.util.Set;
+
+import net.minecraft.item.ItemStack;
 
 public interface IAugmentItem {
 

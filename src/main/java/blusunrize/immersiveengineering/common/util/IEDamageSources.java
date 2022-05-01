@@ -1,8 +1,9 @@
 package blusunrize.immersiveengineering.common.util;
 
+import com.emoniph.witchery.util.EntityDamageSourceIndirectSilver;
+
 import blusunrize.immersiveengineering.common.entities.EntityRailgunShot;
 import blusunrize.immersiveengineering.common.entities.EntityRevolvershot;
-import com.emoniph.witchery.util.EntityDamageSourceIndirectSilver;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.DamageSource;

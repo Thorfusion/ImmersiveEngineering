@@ -1,8 +1,8 @@
 package blusunrize.immersiveengineering.common.blocks.metal;
 
-import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import blusunrize.immersiveengineering.common.blocks.TileEntityIEBase;
 
 public abstract class TileEntityMultiblockPart extends TileEntityIEBase
 {
