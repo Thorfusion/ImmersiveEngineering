@@ -159,6 +159,9 @@ publishing {
             groupId = project.group
             version = project.version
             artifacts = [apiJar, apiZip, deobfJar, jar]
+            components.java.withVariantsFromConfiguration(configurations.runtimeElements) {
+                skip()
+            }
         }
     }
 }
