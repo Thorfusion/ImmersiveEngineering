@@ -27,3 +27,9 @@ All bugs, errors or alike should be directed to us not those before us that we u
 + added/fixes: BluSunrize#1653
 + fixes: BluSunrize#1237
 + added posibillity to add graphit electrodes
+
+# License stuff
+
+[LICENSE](https://raw.githubusercontent.com/Thorfusion/ImmersiveEngineering/1.7.10/LICENSE.md)
+
+[ORIGNAL MOD](https://github.com/BluSunrize/ImmersiveEngineering)
