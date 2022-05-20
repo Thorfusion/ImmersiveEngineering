@@ -1,3 +1,5 @@
+All Rights Reserved - BlueSunrize
+
 Modifications made by Thorfusion, Terralization and maggi373 goes under:
 “Commons Clause” License Condition v1.0
 
